@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "version": "0.9.0",
+  "serverVersion": "0.7.1",
+  "verifiedAt": "2026-10-24T15:11:37.163Z",
+  "scope": "Ready distribution files verified before publication; APK bytes preserved and Windows ZIP extracted and tested through the actual client.",
+  "releaseUrl": "https://github.com/Stikurt/gargantua/releases/tag/v0.9.0",
+  "sourceCodeCommit": "8ee9cb539a1c6a02be2b05b772fe78f1ddd8ef59",
+  "assets": [
+    {
+      "name": "Gargantua-Android-0.9.0.apk",
+      "size": 6895603,
+      "sha256": "1d92cb82c8e5612455066e105b93a5a006c8ebed8f34ff5d5f3ba2b0e35a7d1f",
+      "url": "https://github.com/Stikurt/gargantua/releases/download/v0.9.0/Gargantua-Android-0.9.0.apk"
+    },
+    {
+      "name": "Gargantua-Windows-0.9.0-x64.zip",
+      "size": 162592902,
+      "sha256": "4c602ea8b7b17adb139709d69150cbd3d7d12d54afee9cbb093e429c3361ffa0",
+      "url": "https://github.com/Stikurt/gargantua/releases/download/v0.9.0/Gargantua-Windows-0.9.0-x64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 192,
+      "sha256": "4a6eb2da1216193cafc7cd5512d5668377efedd544e82084489fc01ad878b19e",
+      "url": "https://github.com/Stikurt/gargantua/releases/download/v0.9.0/SHA256SUMS.txt"
+    }
+  ],
+  "android": {
+    "packageId": "local.gargantua.mvp.debug",
+    "versionCode": 2,
+    "minSdk": 29,
+    "targetSdk": 35,
+    "debuggable": true,
+    "validSignature": true,
+    "signerMatchesPublishedVersion": "0.8.0",
+    "sameBytesAsPhysicallyTestedApk": true
+  },
+  "windows": {
+    "architecture": "x64",
+    "format": "portable ZIP",
+    "topLevelFolder": "Gargantua-Windows-0.9.0-x64",
+    "archiveFiles": 89,
+    "pinnedRuntimeFilesVerified": 73,
+    "extractedClientChecks": 52,
+    "extractedClientPassed": true,
+    "normalUserProfileModified": false,
+    "chapterDownloadsStarted": false
+  },
+  "privacy": {
+    "personalConnectionDataIncluded": false,
+    "signingPrivateKeysIncluded": false,
+    "bookContentsIncluded": false,
+    "userLibraryIncluded": false,
+    "debugLogsIncluded": false
+  },
+  "notes": [
+    "Windows requires extracting the entire ZIP before launching Gargantua.exe.",
+    "Search and new downloads require a configured server; cached text is readable offline.",
+    "The APK is a debug build with WebView debugging enabled."
+  ]
+}

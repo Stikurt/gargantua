@@ -8,9 +8,11 @@
 |---|---|
 | Клонирование | Git |
 | Сервер | Docker Engine / Docker Desktop с Compose v2; Linux containers |
-| Windows-клиент | Windows x64, PowerShell 5.1 или новее, Docker Desktop, закреплённый архив Electron |
+| Готовый Windows-клиент | Windows x64; для поиска — работающий сервер на том же ПК |
+| Сборка Windows | Windows x64, PowerShell 5.1 или новее, Docker Desktop, закреплённый архив Electron |
 | Сборка Android | Docker, PowerShell; SDK и JDK устанавливаются внутри образа сборки |
-| Установка/проверка Android | Android 10+, актуальный Android System WebView, Android Platform Tools (`adb` в PATH), USB-кабель с передачей данных |
+| Готовый Android APK | Android 10+, актуальный Android System WebView, разрешение системной установки APK |
+| USB-подключение/проверка Android | Android Platform Tools (`adb` в PATH), USB-кабель с передачей данных и разрешённая USB-отладка |
 | Удалённое подключение телефона | Tailscale на ПК и телефоне, одна доступная обоим сеть Tailscale |
 | Тесты без Docker и клиентская автоматизация | Node.js 24 и npm; дополнительно Playwright для сценариев интерфейса |
 
@@ -18,9 +20,26 @@
 
 ## Готовые файлы
 
-Готового GitHub Release **0.9 пока нет**; новая версия собирается из `main` по следующим разделам. [Предыдущий Release v0.8.0](https://github.com/Stikurt/gargantua/releases/tag/v0.8.0) содержит прежние Windows ZIP, APK и SHA256SUMS.txt. Обновление исходников не заменяет эти бинарные файлы.
+Страница [выпуска **v0.9.0**](https://github.com/Stikurt/gargantua/releases/tag/v0.9.0) содержит файлы установки; публичные ссылки доступны после публикации выпуска:
 
-ZIP Windows распаковывается целиком; Android APK устанавливается обычным системным установщиком или `adb install -r <путь-к-APK>`. На устройстве может потребоваться разрешение на установку из выбранного источника. Сервер поднимается отдельно по инструкции ниже. Для обновления Android нужна прежняя подпись; не удаляйте приложение с библиотекой автоматически.
+| Платформа | Файл |
+|---|---|
+| Android 10+ | [Gargantua-Android-0.9.0.apk](https://github.com/Stikurt/gargantua/releases/download/v0.9.0/Gargantua-Android-0.9.0.apk) |
+| Windows x64 portable | [Gargantua-Windows-0.9.0-x64.zip](https://github.com/Stikurt/gargantua/releases/download/v0.9.0/Gargantua-Windows-0.9.0-x64.zip) |
+
+**Windows:** распакуйте ZIP целиком и запустите `Gargantua.exe` из распакованной папки. Соседние файлы Electron и `resources/app` необходимы приложению: один EXE переносить недостаточно. Это portable-папка, отдельного EXE-установщика или MSI нет. Для запуска готового клиента сборка из исходников и скачивание Electron не нужны.
+
+**Android:** скачайте APK на телефон, откройте его через приложение «Файлы» и подтвердите системную установку. Может потребоваться разрешение установки из выбранного источника. Версия **0.9.0 / versionCode 2**, Android 10+, пакет `local.gargantua.mvp.debug`; APK отладочный, WebView debugging включён. Для обновления с сохранением библиотеки нужна та же подпись, что у установленного приложения; не удаляйте приложение автоматически при несовпадении ключа.
+
+Для установки через ADB выполните из папки со скачанным APK:
+
+```powershell
+adb install -r .\Gargantua-Android-0.9.0.apk
+```
+
+Клиенты не содержат книжный сервер. Для поиска, оглавлений и новых глав [поднимите сервер](#сервер) на ПК; для телефона настройте [USB](#подключение-android-через-usb) или [Tailscale](#подключение-через-tailscale). Уже сохранённые тексты доступны без сервера и интернета. Готовый APK через Tailscale не требует постоянного USB-кабеля.
+
+[Предыдущий выпуск v0.8.0](https://github.com/Stikurt/gargantua/releases/tag/v0.8.0) остаётся в истории. Изменение исходников `main` не заменяет файлы готовых выпусков автоматически.
 
 ## Получение исходников
 
