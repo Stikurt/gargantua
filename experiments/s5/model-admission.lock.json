@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "opus-en-ru",
+      "role": "translation",
+      "license": {
+        "id": "apache-2.0",
+        "sourceUrl": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/blob/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/README.md",
+        "scope": "model-weights"
+      },
+      "source": {
+        "publisher": "Helsinki-NLP",
+        "repo": "Helsinki-NLP/opus-mt-en-ru",
+        "revision": "3ff4dbd98515ba253f08f183e0de0b7ccf189ee3",
+        "reviewStatus": "reviewed-conversion"
+      },
+      "artifacts": [
+        {
+          "path": "opus-en-ru/README.md",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/README.md",
+          "size": 1123,
+          "sha256": "020bfd697b7d0da0338611cf445eb44ae45dda27ff49f2bf64e21ee46882b48b",
+          "kind": "license"
+        },
+        {
+          "path": "opus-en-ru/config.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/config.json",
+          "size": 1381,
+          "sha256": "d3c2614fd099bc228fc257f047e46f1c6f94cfa12dee2b1fa6c0d780e6b7de06",
+          "kind": "config"
+        },
+        {
+          "path": "opus-en-ru/generation_config.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/generation_config.json",
+          "size": 293,
+          "sha256": "152452cb7a96bff6c20b54f91fae2a655b72a8a9ce978ca3e9384f87253d5281",
+          "kind": "config"
+        },
+        {
+          "path": "opus-en-ru/model.safetensors",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/model.safetensors",
+          "size": 306967464,
+          "sha256": "07f5d90a45955a73412a118f0635315a28ea5a5d82522f3be008e71d452526c0",
+          "kind": "weights"
+        },
+        {
+          "path": "opus-en-ru/source.spm",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/source.spm",
+          "size": 802781,
+          "sha256": "16bebef1389a0b8ab452772c4e35b9e605e5713f8ac7baa71ca701394eaa086d",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "opus-en-ru/target.spm",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/target.spm",
+          "size": 1080169,
+          "sha256": "745998e51ba5b058e38b7ac7765c25c43ed5c1c39cc92b27163b9b2e323c9d7c",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "opus-en-ru/tokenizer_config.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/tokenizer_config.json",
+          "size": 42,
+          "sha256": "eca697b0e7109b94a9f2a1de82173fdbd4ddee97d1fd46a15b3162f191e6eed2",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "opus-en-ru/vocab.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/vocab.json",
+          "size": 2601758,
+          "sha256": "33e95da3be3fa3b50169c4c46693ba2f29fbf4cb29d99044bd07d72d181fa1e9",
+          "kind": "tokenizer"
+        }
+      ]
+    },
+    {
+      "id": "m2m100-418m",
+      "role": "translation",
+      "license": {
+        "id": "mit",
+        "sourceUrl": "https://huggingface.co/facebook/m2m100_418M/blob/ae6407352f7f86e328c0f0678d466fc4246e78b3/README.md",
+        "scope": "model-weights"
+      },
+      "source": {
+        "publisher": "facebook",
+        "repo": "facebook/m2m100_418M",
+        "revision": "ae6407352f7f86e328c0f0678d466fc4246e78b3",
+        "reviewStatus": "reviewed-conversion"
+      },
+      "artifacts": [
+        {
+          "path": "m2m100-418m/README.md",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/README.md",
+          "size": 4603,
+          "sha256": "1fd660f130aedc5ecf1796b47ab47d43d3c4b36541f5387b7adb3df75cb5dfdb",
+          "kind": "license"
+        },
+        {
+          "path": "m2m100-418m/config.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/config.json",
+          "size": 908,
+          "sha256": "df0ae43e4e4b0d7e3c97b7f447857a70ef6b6a2aa1f145cedbcc730d95f67134",
+          "kind": "config"
+        },
+        {
+          "path": "m2m100-418m/generation_config.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/generation_config.json",
+          "size": 233,
+          "sha256": "aed76366507333ddbb8bd49960f23c82fe6446b3319a46a54befdb45324ccf61",
+          "kind": "config"
+        },
+        {
+          "path": "m2m100-418m/model.safetensors",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/model.safetensors",
+          "size": 1935682568,
+          "sha256": "9ffe8e7dcad99be51e90d98320945f668d0b7cc7553ad87d2cb33a923b9b3a3a",
+          "kind": "weights"
+        },
+        {
+          "path": "m2m100-418m/sentencepiece.bpe.model",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/sentencepiece.bpe.model",
+          "size": 2423393,
+          "sha256": "d8f7c76ed2a5e0822be39f0a4f95a55eb19c78f4593ce609e2edbc2aea4d380a",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "m2m100-418m/special_tokens_map.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/special_tokens_map.json",
+          "size": 1140,
+          "sha256": "c1a4f86c3874d279ae1b2a05162858db5dd6c61665d84223ed886cbcff08fda6",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "m2m100-418m/tokenizer_config.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/tokenizer_config.json",
+          "size": 298,
+          "sha256": "a53e6aa83da0b82565ed90c3849056307a9453843322ac5b8439ec4b9497fe48",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "m2m100-418m/vocab.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/vocab.json",
+          "size": 3708092,
+          "sha256": "b6e77e474aeea8f441363aca7614317c06381f3eacfe10fb9856d5081d1074cc",
+          "kind": "tokenizer"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-1.7b-q8",
+      "role": "translation",
+      "license": {
+        "id": "apache-2.0",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/blob/90862c4b9d2787eaed51d12237eafdfe7c5f6077/README.md",
+        "scope": "model-weights"
+      },
+      "source": {
+        "publisher": "Qwen",
+        "repo": "Qwen/Qwen3-1.7B-GGUF",
+        "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+        "reviewStatus": "verified-official"
+      },
+      "artifacts": [
+        {
+          "path": "qwen3-1.7b-q8/LICENSE",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/LICENSE",
+          "size": 11544,
+          "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd",
+          "kind": "license"
+        },
+        {
+          "path": "qwen3-1.7b-q8/README.md",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/README.md",
+          "size": 6235,
+          "sha256": "60706b0c6aa38e0d1e73a7b21f98e50cad82ee1eaea636fd1f3a49617bccdb0d",
+          "kind": "license"
+        },
+        {
+          "path": "qwen3-1.7b-q8/Qwen3-1.7B-Q8_0.gguf",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf",
+          "size": 1834426016,
+          "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+          "kind": "weights"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-4b-q4",
+      "role": "translation",
+      "license": {
+        "id": "apache-2.0",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/bc640142c66e1fdd12af0bd68f40445458f3869b/README.md",
+        "scope": "model-weights"
+      },
+      "source": {
+        "publisher": "Qwen",
+        "repo": "Qwen/Qwen3-4B-GGUF",
+        "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+        "reviewStatus": "verified-official"
+      },
+      "artifacts": [
+        {
+          "path": "qwen3-4b-q4/LICENSE",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/LICENSE",
+          "size": 11544,
+          "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd",
+          "kind": "license"
+        },
+        {
+          "path": "qwen3-4b-q4/README.md",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/README.md",
+          "size": 7576,
+          "sha256": "f7b7cbdbeab2a25b55e92cf160c035287374253b13af7ea2d5178847f6f8537e",
+          "kind": "license"
+        },
+        {
+          "path": "qwen3-4b-q4/Qwen3-4B-Q4_K_M.gguf",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+          "size": 2497280256,
+          "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "kind": "weights"
+        }
+      ]
+    },
+    {
+      "id": "piper-denis-fp32",
+      "role": "tts",
+      "license": {
+        "id": "repository: MIT; voiceDataset: CC0-1.0",
+        "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/denis/medium/MODEL_CARD",
+        "scope": "voice-weights"
+      },
+      "source": {
+        "publisher": "k2-fsa",
+        "repo": "k2-fsa/sherpa-onnx",
+        "revision": "tts-models",
+        "reviewStatus": "verified-official"
+      },
+      "artifacts": [
+        {
+          "path": "vits-piper-ru_RU-denis-medium.tar.bz2",
+          "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-denis-medium.tar.bz2",
+          "size": 67190991,
+          "sha256": "efa4c18e0b5e32b81d1b6df36b9d312831e5d545200e27848ef926a4cd930300",
+          "kind": "archive"
+        }
+      ]
+    },
+    {
+      "id": "piper-denis-int8",
+      "role": "tts",
+      "license": {
+        "id": "repository: MIT; voiceDataset: CC0-1.0",
+        "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/denis/medium/MODEL_CARD",
+        "scope": "voice-weights"
+      },
+      "source": {
+        "publisher": "k2-fsa",
+        "repo": "k2-fsa/sherpa-onnx",
+        "revision": "tts-models",
+        "reviewStatus": "verified-official"
+      },
+      "artifacts": [
+        {
+          "path": "vits-piper-ru_RU-denis-medium-int8.tar.bz2",
+          "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-denis-medium-int8.tar.bz2",
+          "size": 21058905,
+          "sha256": "d710e29eb7854c42461d16d65d3cef753cc559639ca75806edc75ba71f23af66",
+          "kind": "archive"
+        }
+      ]
+    },
+    {
+      "id": "piper-ruslan-fp32",
+      "role": "tts",
+      "license": {
+        "id": "repository: MIT; voiceDataset: CC-BY-NC-SA-4.0",
+        "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/ruslan/medium/MODEL_CARD",
+        "scope": "voice-weights"
+      },
+      "source": {
+        "publisher": "k2-fsa",
+        "repo": "k2-fsa/sherpa-onnx",
+        "revision": "tts-models",
+        "reviewStatus": "verified-official"
+      },
+      "artifacts": [
+        {
+          "path": "vits-piper-ru_RU-ruslan-medium.tar.bz2",
+          "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-ruslan-medium.tar.bz2",
+          "size": 67210684,
+          "sha256": "0690b1cad01f86e8db9ba988af24898bdc1af774e23cb2e46b9c730269b6fd83",
+          "kind": "archive"
+        }
+      ]
+    },
+    {
+      "id": "mms-rus-fp32",
+      "role": "tts",
+      "license": {
+        "id": "weights: CC-BY-NC-4.0",
+        "sourceUrl": "https://huggingface.co/facebook/mms-tts-rus/blob/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/README.md",
+        "scope": "voice-weights"
+      },
+      "source": {
+        "publisher": "facebook",
+        "repo": "facebook/mms-tts-rus",
+        "revision": "a6f0f76c028c49175f42074ee79bd3e17ee1dd47",
+        "reviewStatus": "verified-official"
+      },
+      "artifacts": [
+        {
+          "path": "mms-tts-rus/model.safetensors",
+          "url": "https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/model.safetensors",
+          "size": 145232120,
+          "sha256": "4ed1b47c11a9d3242ec1a094847f8252f7860c96aeb5ce316047985e58fe8759",
+          "kind": "weights"
+        },
+        {
+          "path": "mms-tts-rus/config.json",
+          "url": "https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/config.json",
+          "size": 1641,
+          "sha256": "d76f3cad35e24a6d10f9d65d833555b7ab8020d8fa8d30eb5d70070ef15ae315",
+          "kind": "config"
+        },
+        {
+          "path": "mms-tts-rus/vocab.json",
+          "url": "https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/vocab.json",
+          "size": 511,
+          "sha256": "05dc299fc7281439c4792e6a6e12fa5f5a7bd4a2cf6b9cc807b602a2ff4e7abb",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "mms-tts-rus/tokenizer_config.json",
+          "url": "https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/tokenizer_config.json",
+          "size": 288,
+          "sha256": "8a4d38ec4879e5632899764dae779b6ead35e8e295cc0ed79c2d9d0af648323a",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "mms-tts-rus/special_tokens_map.json",
+          "url": "https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/special_tokens_map.json",
+          "size": 48,
+          "sha256": "7807cfe333571a07dbcf74a5ad1e9755da2ff17a43f8fae808a76f48508d621b",
+          "kind": "tokenizer"
+        },
+        {
+          "path": "mms-tts-rus/README.md",
+          "url": "https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/README.md",
+          "size": 3978,
+          "sha256": "30f278fe4ee484b35d1c824b8fa3fb143274a0768d3f71a58f524cebcff8d93b",
+          "kind": "license"
+        }
+      ]
+    }
+  ]
+}

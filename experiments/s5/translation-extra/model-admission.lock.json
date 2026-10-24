@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "qwen35-4b-q4",
+      "role": "translation",
+      "license": {
+        "id": "apache-2.0",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE",
+        "scope": "model-weights"
+      },
+      "source": {
+        "publisher": "lmstudio-community",
+        "repo": "lmstudio-community/Qwen3.5-4B-GGUF",
+        "revision": "f9f88ac3e234be915e23811a6d28ea287bdb927e",
+        "reviewStatus": "reviewed-conversion"
+      },
+      "artifacts": [
+        {
+          "path": "qwen35-4b-q4/Qwen3.5-4B-Q4_K_M.gguf",
+          "url": "https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF/resolve/f9f88ac3e234be915e23811a6d28ea287bdb927e/Qwen3.5-4B-Q4_K_M.gguf",
+          "size": 2707513696,
+          "sha256": "25082a7dd3776cc3c741c6347d3bd04523f05796607b3fbc32fa3a25dfa1418c",
+          "kind": "weights"
+        },
+        {
+          "path": "qwen35-4b-q4/README.md",
+          "url": "https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF/resolve/f9f88ac3e234be915e23811a6d28ea287bdb927e/README.md",
+          "size": 2100,
+          "sha256": "e1b3ca9c804ec81f9d0f8e51eab46d4e0e1b18521e7436bcb95736fb3d0414ae",
+          "kind": "license"
+        }
+      ]
+    }
+  ]
+}

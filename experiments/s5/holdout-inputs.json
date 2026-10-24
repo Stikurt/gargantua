@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "s5-original-holdout-en-ru-v1",
+  "createdLocalDate": "2026-10-23",
+  "sourceLanguage": "en",
+  "targetLanguage": "ru",
+  "provenance": "Four original English microstories authored by the independent safety-review agent for this pilot. No borrowed book text. Frozen before seeing model outputs; separate authorship from the main pilot corpus does not make the Russian reference an independent human benchmark.",
+  "status": "FROZEN_NOT_EXECUTED",
+  "samples": [
+    {
+      "id": "holdout-01-bells",
+      "tags": ["fiction", "conditional", "negation", "numbers", "dialogue", "speaker"],
+      "segments": [
+        {"id": "bells-1", "text": "Mara had not promised to open the gate. She had promised not to open it unless the bell rang three times."},
+        {"id": "bells-2", "text": "It rang twice. 'Then nobody comes in,' she said. The boy outside did not knock again; he laid a third bell on the snow."}
+      ]
+    },
+    {
+      "id": "holdout-02-letter",
+      "tags": ["fiction", "pronoun-context", "counterfactual", "gender", "dialogue", "inference-restraint"],
+      "segments": [
+        {"id": "letter-1", "text": "Ilya gave Vera the letter, but she refused to read it aloud. 'If Mother were still alive, she would tell you herself,' Vera said."},
+        {"id": "letter-2", "text": "He watched her fold the page. It was not the letter he wanted back. It was the voice she had borrowed to say those words."}
+      ]
+    },
+    {
+      "id": "holdout-03-ash",
+      "tags": ["fiction", "names", "common-word-name", "terminology", "repetition", "glossary"],
+      "glossary": [
+        {"source": "Ash", "target": "Ясень", "role": "character", "note": "The character is named after the tree, not ashes from a fire. Inflection is allowed."},
+        {"source": "Reed Clan", "target": "Камышовое племя", "role": "group", "note": "Fictional group in this original fixture. Inflection is allowed."}
+      ],
+      "segments": [
+        {"id": "ash-1", "text": "Ash stood beneath the ash tree while the fire settled into ash. The Reed Clan had named him for the tree, not for what remained of the fire."},
+        {"id": "ash-2", "text": "'I am still here,' he said. No one answered. Still here, he told the empty clearing; still here."}
+      ]
+    },
+    {
+      "id": "holdout-04-window",
+      "tags": ["science-fiction", "numbers", "units", "negative-decimal", "quantifiers", "negation", "dialogue"],
+      "segments": [
+        {"id": "window-1", "text": "The display read minus 0.4 degrees Celsius. At least twelve seconds had to pass between pulses, and no more than two pulses were allowed before dawn."},
+        {"id": "window-2", "text": "'Do not press it unless the window is closed,' Neri said. Sol closed his eyes instead. He had heard every word; he had obeyed none of them."}
+      ]
+    }
+  ]
+}

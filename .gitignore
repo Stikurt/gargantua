@@ -26,3 +26,15 @@ android/mvp/src/main/assets/icon.svg
 *.p12
 *.pfx
 *.partial
+
+# Heavy experimental artifacts remain private and local
+experiments/**/wheels/
+experiments/**/prefetched/
+experiments/**/pip-tmp/
+experiments/**/models/
+experiments/**/results/
+*.onnx
+*.gguf
+*.safetensors
+*.pt
+*.pth

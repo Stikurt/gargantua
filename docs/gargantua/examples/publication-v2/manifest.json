@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 2,
+  "id": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+  "revision": 1,
+  "workId": "44fb5fe4-35ec-4f90-ad51-abeb1c901faa",
+  "expressionId": "35c183ed-3081-4b6a-bd5d-6d6819d9e372",
+  "editionId": "64897ff3-1939-4b91-ac84-e14c2eb49421",
+  "title": "Проверочная публикация",
+  "language": "ru",
+  "readingOrder": [
+    {
+      "chapterId": "first",
+      "path": "chapters/first.json",
+      "sha256": "897793b0c00e74c18a1cde322006c5580716289c513dbc43ff05d0c77a3fd95c",
+      "bytes": 238,
+      "mediaType": "application/json"
+    }
+  ],
+  "resources": []
+}

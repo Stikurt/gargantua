@@ -1,0 +1,13 @@
+{
+  "publicationId": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+  "publicationRevision": 1,
+  "chapterId": "first",
+  "blockId": "p1",
+  "offset": 0,
+  "quote": {
+    "exact": "Проверочный текст",
+    "prefix": "",
+    "suffix": " для контракта."
+  },
+  "progression": 0
+}

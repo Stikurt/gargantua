@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "createdLocalDate": "2026-10-23",
+  "status": "FROZEN_BEFORE_TRANSLATION_OUTPUT_REVIEW",
+  "modelOutputsReadBeforeAuthoring": false,
+  "files": [
+    {
+      "path": "chapter-inputs.json",
+      "sha256": "57ab2e85a4f49014e6061af9503fa06a81d6c872d3447c461cc7d0dfda4624db",
+      "bytes": 3493
+    },
+    {
+      "path": "chapter-reference.private.json",
+      "sha256": "ecd103fc24e24e8a5564329687b5b29d1ebffcd61799c7c1890276ca7f0c09d6",
+      "bytes": 7346
+    }
+  ],
+  "paragraphWordCounts": [
+    89,
+    93,
+    92,
+    96
+  ]
+}

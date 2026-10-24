@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "variant": "opus-manual-sentencewise-diagnostic-v1",
+  "createdAtUtc": "2026-10-22T20:45:55.847377+00:00",
+  "freezeProvenance": "Original source-only manually reviewed boundaries frozen after observing paragraph-baseline omissions and before any sentencewise diagnostic inference. No wording or source text changed to tune translations.",
+  "productionReadySplitter": false,
+  "contextPolicy": "Independent ordered translation units. Quoted pronoun/name continuity may degrade; this is measured separately, not concealed.",
+  "corpora": [
+    {
+      "path": "experiments/s5/translation/corpus.json",
+      "sha256": "b36f86c09999e6fdab441e816ef2ebfeb136c33827d933bae10e818d72f5c5c8"
+    },
+    {
+      "path": "experiments/s5/chapter-inputs.json",
+      "sha256": "57ab2e85a4f49014e6061af9503fa06a81d6c872d3447c461cc7d0dfda4624db"
+    }
+  ],
+  "segments": [
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-01-atmosphere",
+      "language": "en",
+      "sourceBytes": 142,
+      "sourceSha256": "aef10cdabeb950d4be1ab207d674e24fdfdabd64b1096ed08cc1cbe982aaebe4",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 61,
+          "kind": "translate"
+        },
+        {
+          "startByte": 61,
+          "endByte": 62,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 62,
+          "endByte": 142,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-02-dialogue",
+      "language": "en",
+      "sourceBytes": 110,
+      "sourceSha256": "dd3d7fc255ab62bf086db9fc93c0759e28ff461ed1014923b3ddf6c407d8d28d",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 41,
+          "kind": "translate"
+        },
+        {
+          "startByte": 41,
+          "endByte": 42,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 42,
+          "endByte": 110,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-03-negation",
+      "language": "en",
+      "sourceBytes": 115,
+      "sourceSha256": "7adf68218c65b101925889af77134785fef255d94bde92ba30ab7db63cf66886",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 48,
+          "kind": "translate"
+        },
+        {
+          "startByte": 48,
+          "endByte": 49,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 49,
+          "endByte": 115,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-04-quantity",
+      "language": "en",
+      "sourceBytes": 95,
+      "sourceSha256": "4a1a6fb4ba6447a8aeb77686739bf212a3739ea1c5318221bb27296b52470de7",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 39,
+          "kind": "translate"
+        },
+        {
+          "startByte": 39,
+          "endByte": 40,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 40,
+          "endByte": 95,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-05-idiom",
+      "language": "en",
+      "sourceBytes": 137,
+      "sourceSha256": "d04eacd3456cf5a0a6432650ba7d9d7355deb81e7b4a15532ac963e4c295b193",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 84,
+          "kind": "translate"
+        },
+        {
+          "startByte": 84,
+          "endByte": 85,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 85,
+          "endByte": 137,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-06-context",
+      "language": "en",
+      "sourceBytes": 116,
+      "sourceSha256": "fa6709de364e191c13eed2e43afce9a48c020ef2b57a9c1f9390c9717c079b5c",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 59,
+          "kind": "translate"
+        },
+        {
+          "startByte": 59,
+          "endByte": 60,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 60,
+          "endByte": 116,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-07-glossary",
+      "language": "en",
+      "sourceBytes": 114,
+      "sourceSha256": "fd8e59a777f502df6b8b03600a2b39e127d8aea8a9dbb2c8f124f511f978f332",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 51,
+          "kind": "translate"
+        },
+        {
+          "startByte": 51,
+          "endByte": 52,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 52,
+          "endByte": 114,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-08-untrusted-quote",
+      "language": "en",
+      "sourceBytes": 154,
+      "sourceSha256": "013e264875c04691fb43b4d540d8f83bde6977cbae2b30ab209e32fec892f806",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 80,
+          "kind": "translate"
+        },
+        {
+          "startByte": 80,
+          "endByte": 81,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 81,
+          "endByte": 154,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-09-formatting",
+      "language": "en",
+      "sourceBytes": 85,
+      "sourceSha256": "0fad5a61c82bccde00cdad1304a66635319adb025e49b97ce8dbc1f870815bfe",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 25,
+          "kind": "translate"
+        },
+        {
+          "startByte": 25,
+          "endByte": 27,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 27,
+          "endByte": 51,
+          "kind": "translate"
+        },
+        {
+          "startByte": 51,
+          "endByte": 53,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 53,
+          "endByte": 85,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-10-irony",
+      "language": "en",
+      "sourceBytes": 125,
+      "sourceSha256": "365056486ab9169662e99723ad14614205a61cf0b954f256e6ad58c60945d384",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 23,
+          "kind": "translate"
+        },
+        {
+          "startByte": 23,
+          "endByte": 24,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 24,
+          "endByte": 91,
+          "kind": "translate"
+        },
+        {
+          "startByte": 91,
+          "endByte": 92,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 92,
+          "endByte": 125,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-11-long-causality",
+      "language": "en",
+      "sourceBytes": 364,
+      "sourceSha256": "0a53088948624bbbdc8a36e6d95de76e23b821ff6f2581ba2d0dd5d0dbfdc539",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 63,
+          "kind": "translate"
+        },
+        {
+          "startByte": 63,
+          "endByte": 64,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 64,
+          "endByte": 154,
+          "kind": "translate"
+        },
+        {
+          "startByte": 154,
+          "endByte": 155,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 155,
+          "endByte": 262,
+          "kind": "translate"
+        },
+        {
+          "startByte": 262,
+          "endByte": 263,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 263,
+          "endByte": 295,
+          "kind": "translate"
+        },
+        {
+          "startByte": 295,
+          "endByte": 296,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 296,
+          "endByte": 364,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/translation/corpus.json",
+      "id": "en-12-no-invention",
+      "language": "en",
+      "sourceBytes": 119,
+      "sourceSha256": "156c59008d4ff9acfe2dda2d607cdd060691167c67cd97ca0835b6835d47e7fc",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 72,
+          "kind": "translate"
+        },
+        {
+          "startByte": 72,
+          "endByte": 73,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 73,
+          "endByte": 92,
+          "kind": "translate"
+        },
+        {
+          "startByte": 92,
+          "endByte": 93,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 93,
+          "endByte": 119,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/chapter-inputs.json",
+      "id": "chapter-bridge-1",
+      "language": "en",
+      "sourceBytes": 488,
+      "sourceSha256": "20def0f5cd943ec163ddd8e2e4fb1c363b5d6cde1f3d48327550ba621108259d",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 95,
+          "kind": "translate"
+        },
+        {
+          "startByte": 95,
+          "endByte": 96,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 96,
+          "endByte": 196,
+          "kind": "translate"
+        },
+        {
+          "startByte": 196,
+          "endByte": 197,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 197,
+          "endByte": 248,
+          "kind": "translate"
+        },
+        {
+          "startByte": 248,
+          "endByte": 249,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 249,
+          "endByte": 347,
+          "kind": "translate"
+        },
+        {
+          "startByte": 347,
+          "endByte": 348,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 348,
+          "endByte": 397,
+          "kind": "translate"
+        },
+        {
+          "startByte": 397,
+          "endByte": 398,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 398,
+          "endByte": 488,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/chapter-inputs.json",
+      "id": "chapter-bridge-2",
+      "language": "en",
+      "sourceBytes": 502,
+      "sourceSha256": "b8371635e35b0dbd3b9f2a0812de3cbd942f77eedb0a46b94b123623de169c73",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 38,
+          "kind": "translate"
+        },
+        {
+          "startByte": 38,
+          "endByte": 39,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 39,
+          "endByte": 136,
+          "kind": "translate"
+        },
+        {
+          "startByte": 136,
+          "endByte": 137,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 137,
+          "endByte": 178,
+          "kind": "translate"
+        },
+        {
+          "startByte": 178,
+          "endByte": 179,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 179,
+          "endByte": 214,
+          "kind": "translate"
+        },
+        {
+          "startByte": 214,
+          "endByte": 215,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 215,
+          "endByte": 294,
+          "kind": "translate"
+        },
+        {
+          "startByte": 294,
+          "endByte": 295,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 295,
+          "endByte": 348,
+          "kind": "translate"
+        },
+        {
+          "startByte": 348,
+          "endByte": 349,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 349,
+          "endByte": 382,
+          "kind": "translate"
+        },
+        {
+          "startByte": 382,
+          "endByte": 383,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 383,
+          "endByte": 429,
+          "kind": "translate"
+        },
+        {
+          "startByte": 429,
+          "endByte": 430,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 430,
+          "endByte": 502,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/chapter-inputs.json",
+      "id": "chapter-bridge-3",
+      "language": "en",
+      "sourceBytes": 501,
+      "sourceSha256": "4b425ddcdb4ec3a829e222725278ce0756187a2ebd71b48d85ecc0b0ecaf924f",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 86,
+          "kind": "translate"
+        },
+        {
+          "startByte": 86,
+          "endByte": 87,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 87,
+          "endByte": 161,
+          "kind": "translate"
+        },
+        {
+          "startByte": 161,
+          "endByte": 162,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 162,
+          "endByte": 186,
+          "kind": "translate"
+        },
+        {
+          "startByte": 186,
+          "endByte": 187,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 187,
+          "endByte": 310,
+          "kind": "translate"
+        },
+        {
+          "startByte": 310,
+          "endByte": 311,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 311,
+          "endByte": 366,
+          "kind": "translate"
+        },
+        {
+          "startByte": 366,
+          "endByte": 367,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 367,
+          "endByte": 410,
+          "kind": "translate"
+        },
+        {
+          "startByte": 410,
+          "endByte": 411,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 411,
+          "endByte": 501,
+          "kind": "translate"
+        }
+      ]
+    },
+    {
+      "corpusPath": "experiments/s5/chapter-inputs.json",
+      "id": "chapter-bridge-4",
+      "language": "en",
+      "sourceBytes": 563,
+      "sourceSha256": "f90b006b4ffeb3ffc9d6526dc39e55414ab8db47880e700868ce1e2f4c031478",
+      "intervals": [
+        {
+          "startByte": 0,
+          "endByte": 77,
+          "kind": "translate"
+        },
+        {
+          "startByte": 77,
+          "endByte": 78,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 78,
+          "endByte": 216,
+          "kind": "translate"
+        },
+        {
+          "startByte": 216,
+          "endByte": 217,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 217,
+          "endByte": 253,
+          "kind": "translate"
+        },
+        {
+          "startByte": 253,
+          "endByte": 254,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 254,
+          "endByte": 307,
+          "kind": "translate"
+        },
+        {
+          "startByte": 307,
+          "endByte": 308,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 308,
+          "endByte": 366,
+          "kind": "translate"
+        },
+        {
+          "startByte": 366,
+          "endByte": 367,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 367,
+          "endByte": 441,
+          "kind": "translate"
+        },
+        {
+          "startByte": 441,
+          "endByte": 442,
+          "kind": "whitespace"
+        },
+        {
+          "startByte": 442,
+          "endByte": 563,
+          "kind": "translate"
+        }
+      ]
+    }
+  ],
+  "translationUnits": 59
+}

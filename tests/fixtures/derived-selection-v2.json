@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "sha256": "110c7532d002995fd69f8b656a102fe18d4c7e950e4aaf9ed2f1b634f68b7074",
+    "manifest": {
+      "schemaVersion": 2,
+      "sourceLanguage": "en",
+      "workId": "10000000-0000-4000-8000-000000000010",
+      "expressionId": "10000000-0000-4000-8000-000000000011",
+      "snapshotId": null,
+      "parts": [
+        {
+          "ordinal": 0,
+          "publicationId": "10000000-0000-4000-8000-000000000001",
+          "editionId": "10000000-0000-4000-8000-000000000020",
+          "publicationSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "packageSha256": "4444444444444444444444444444444444444444444444444444444444444444",
+          "chapterCount": 3
+        },
+        {
+          "ordinal": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "editionId": "10000000-0000-4000-8000-000000000021",
+          "publicationSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "packageSha256": "5555555555555555555555555555555555555555555555555555555555555555",
+          "chapterCount": 4
+        },
+        {
+          "ordinal": 2,
+          "publicationId": "10000000-0000-4000-8000-000000000003",
+          "editionId": "10000000-0000-4000-8000-000000000022",
+          "publicationSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "packageSha256": "6666666666666666666666666666666666666666666666666666666666666666",
+          "chapterCount": 2
+        }
+      ],
+      "selection": {
+        "schemaVersion": 1,
+        "start": 6,
+        "count": 3,
+        "total": 9,
+        "chapters": [
+          {
+            "ordinal": 5,
+            "partIndex": 1,
+            "publicationId": "10000000-0000-4000-8000-000000000002",
+            "chapterIndex": 2,
+            "chapterId": "c-2"
+          },
+          {
+            "ordinal": 6,
+            "partIndex": 1,
+            "publicationId": "10000000-0000-4000-8000-000000000002",
+            "chapterIndex": 3,
+            "chapterId": "c-3"
+          },
+          {
+            "ordinal": 7,
+            "partIndex": 2,
+            "publicationId": "10000000-0000-4000-8000-000000000003",
+            "chapterIndex": 0,
+            "chapterId": "c-0"
+          }
+        ]
+      }
+    },
+    "parts": [
+      {
+        "id": "10000000-0000-4000-8000-000000000001",
+        "work_id": "10000000-0000-4000-8000-000000000010",
+        "expression_id": "10000000-0000-4000-8000-000000000011",
+        "edition_id": "10000000-0000-4000-8000-000000000020",
+        "chapter_count": 3,
+        "publication_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+        "package_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+        "publication_manifest": {
+          "schemaVersion": 2,
+          "id": "10000000-0000-4000-8000-000000000001",
+          "revision": 1,
+          "workId": "10000000-0000-4000-8000-000000000010",
+          "expressionId": "10000000-0000-4000-8000-000000000011",
+          "editionId": "10000000-0000-4000-8000-000000000020",
+          "title": "Synthetic original",
+          "language": "en",
+          "readingOrder": [
+            {
+              "chapterId": "c-0",
+              "path": "chapters/c-0.json",
+              "sha256": "c314333bcb61207319f91e9e33e4799ab82df59517391742549eea51c02468c5",
+              "bytes": 158,
+              "mediaType": "application/json"
+            },
+            {
+              "chapterId": "c-1",
+              "path": "chapters/c-1.json",
+              "sha256": "7e12279ba36bab71531bd198f62af6e9c2b4ed1b735c91a4d91cec76515a5fd3",
+              "bytes": 158,
+              "mediaType": "application/json"
+            },
+            {
+              "chapterId": "c-2",
+              "path": "chapters/c-2.json",
+              "sha256": "933b4fbd01069946ac9f52b3a7a952cff3eb01dac200086c88462015e3e6d464",
+              "bytes": 158,
+              "mediaType": "application/json"
+            }
+          ],
+          "resources": []
+        }
+      },
+      {
+        "id": "10000000-0000-4000-8000-000000000002",
+        "work_id": "10000000-0000-4000-8000-000000000010",
+        "expression_id": "10000000-0000-4000-8000-000000000011",
+        "edition_id": "10000000-0000-4000-8000-000000000021",
+        "chapter_count": 4,
+        "publication_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+        "package_sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+        "publication_manifest": {
+          "schemaVersion": 2,
+          "id": "10000000-0000-4000-8000-000000000002",
+          "revision": 1,
+          "workId": "10000000-0000-4000-8000-000000000010",
+          "expressionId": "10000000-0000-4000-8000-000000000011",
+          "editionId": "10000000-0000-4000-8000-000000000021",
+          "title": "Synthetic original",
+          "language": "en",
+          "readingOrder": [
+            {
+              "chapterId": "c-0",
+              "path": "chapters/c-0.json",
+              "sha256": "5c447d406b33a7ecb3c592b72b87a6c6dd8a17859b60ea123b8884bfcc0109c5",
+              "bytes": 158,
+              "mediaType": "application/json"
+            },
+            {
+              "chapterId": "c-1",
+              "path": "chapters/c-1.json",
+              "sha256": "f273878c490325ca7a94389d2abd5b341cd7160e1716953eac8e7e2be45ceb7a",
+              "bytes": 158,
+              "mediaType": "application/json"
+            },
+            {
+              "chapterId": "c-2",
+              "path": "chapters/c-2.json",
+              "sha256": "cdab1002a24680f1d22c194524b5b760a56d8948fc6a92df6b861eafe7476355",
+              "bytes": 158,
+              "mediaType": "application/json"
+            },
+            {
+              "chapterId": "c-3",
+              "path": "chapters/c-3.json",
+              "sha256": "4d0f5f53e57c512c85a0c509a518549193c1459acfe6166bfcb73f9503d92578",
+              "bytes": 158,
+              "mediaType": "application/json"
+            }
+          ],
+          "resources": []
+        }
+      },
+      {
+        "id": "10000000-0000-4000-8000-000000000003",
+        "work_id": "10000000-0000-4000-8000-000000000010",
+        "expression_id": "10000000-0000-4000-8000-000000000011",
+        "edition_id": "10000000-0000-4000-8000-000000000022",
+        "chapter_count": 2,
+        "publication_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+        "package_sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+        "publication_manifest": {
+          "schemaVersion": 2,
+          "id": "10000000-0000-4000-8000-000000000003",
+          "revision": 1,
+          "workId": "10000000-0000-4000-8000-000000000010",
+          "expressionId": "10000000-0000-4000-8000-000000000011",
+          "editionId": "10000000-0000-4000-8000-000000000022",
+          "title": "Synthetic original",
+          "language": "en",
+          "readingOrder": [
+            {
+              "chapterId": "c-0",
+              "path": "chapters/c-0.json",
+              "sha256": "e2c566d8b3d35911a1868b0285bde584496749323136a514c9650a8463199989",
+              "bytes": 158,
+              "mediaType": "application/json"
+            },
+            {
+              "chapterId": "c-1",
+              "path": "chapters/c-1.json",
+              "sha256": "a612b93a4538c6214fb5c5949d28a9f040274b027b4837a8f828c69d6a730115",
+              "bytes": 158,
+              "mediaType": "application/json"
+            }
+          ],
+          "resources": []
+        }
+      }
+    ]
+  },
+  "contents": [
+    {
+      "title": "Synthetic original",
+      "author": "Fixture Author",
+      "language": "en",
+      "assets": {},
+      "chapters": [
+        {
+          "title": "Part 0 chapter 0",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 0/0. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Part 0 chapter 1",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 0/1. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Part 0 chapter 2",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 0/2. 😀 A safely pinned sentence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Synthetic original",
+      "author": "Fixture Author",
+      "language": "en",
+      "assets": {},
+      "chapters": [
+        {
+          "title": "Part 1 chapter 0",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 1/0. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Part 1 chapter 1",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 1/1. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Part 1 chapter 2",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 1/2. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Part 1 chapter 3",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 1/3. 😀 A safely pinned sentence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Synthetic original",
+      "author": "Fixture Author",
+      "language": "en",
+      "assets": {},
+      "chapters": [
+        {
+          "title": "Part 2 chapter 0",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 2/0. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Part 2 chapter 1",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Original body 2/1. 😀 A safely pinned sentence."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translationPlan": {
+    "segments": 6,
+    "sha256": "6541fa4ef257b8bee46edcfbf40c11fedb253ef43e3e6a9b721474cb145983c7",
+    "manifest": {
+      "schemaVersion": 1,
+      "segmentationRevision": "derived-unicode-v1",
+      "sourceSha256": "110c7532d002995fd69f8b656a102fe18d4c7e950e4aaf9ed2f1b634f68b7074",
+      "kind": "translation",
+      "segments": [
+        {
+          "partIndex": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "chapterIndex": 2,
+          "blockIndex": -1,
+          "start": 0,
+          "end": 16,
+          "ordinal": 0,
+          "id": "0db919cc-435b-5b86-af3d-60a547d002df",
+          "sourceSha256": "4a45199921db895746827dee19e6ba1aa9c1356815a67dd728e291a67d1ebc12"
+        },
+        {
+          "partIndex": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "chapterIndex": 2,
+          "blockIndex": 0,
+          "start": 0,
+          "end": 46,
+          "ordinal": 1,
+          "id": "10f6d4b3-aa87-5411-ad9c-011db2131491",
+          "sourceSha256": "16ab139eefdc2aeb0c4982621ab4ac3595d1ac991ad0d4cbdcd3342ce4c4260e"
+        },
+        {
+          "partIndex": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "chapterIndex": 3,
+          "blockIndex": -1,
+          "start": 0,
+          "end": 16,
+          "ordinal": 2,
+          "id": "ccd4c559-c896-515d-a877-e3d59ecb81b1",
+          "sourceSha256": "88373c75ff2aba58bba4f0a2a9edaba828c4dc20bd0af9a37b104f6b694913fa"
+        },
+        {
+          "partIndex": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "chapterIndex": 3,
+          "blockIndex": 0,
+          "start": 0,
+          "end": 46,
+          "ordinal": 3,
+          "id": "75424cb1-c781-5e50-a690-01f91d5b23d4",
+          "sourceSha256": "e6de401187be864b5439828d7caa783463514e3e247145ce0723b6d3fe92c97c"
+        },
+        {
+          "partIndex": 2,
+          "publicationId": "10000000-0000-4000-8000-000000000003",
+          "chapterIndex": 0,
+          "blockIndex": -1,
+          "start": 0,
+          "end": 16,
+          "ordinal": 4,
+          "id": "0b03523f-b989-59a6-a75d-01fe9130dbfc",
+          "sourceSha256": "4f378fa0822b83fd407352cd2ca1d934717402971d8936573a46ace57f3b69e1"
+        },
+        {
+          "partIndex": 2,
+          "publicationId": "10000000-0000-4000-8000-000000000003",
+          "chapterIndex": 0,
+          "blockIndex": 0,
+          "start": 0,
+          "end": 46,
+          "ordinal": 5,
+          "id": "47a9edc9-5492-56fe-a927-96c1edf5f600",
+          "sourceSha256": "cb76f9633316bb4b2d5f94b06c517b1935b835805981dd32333c84084585c204"
+        }
+      ]
+    }
+  },
+  "audioPlan": {
+    "segments": 3,
+    "sha256": "3d88bb812d6762aa81150d4c19e87a7ef86c1ceb5ca6416395268ccb24378ebd",
+    "manifest": {
+      "schemaVersion": 1,
+      "segmentationRevision": "audio-unicode-ranges-v2",
+      "sourceSha256": "110c7532d002995fd69f8b656a102fe18d4c7e950e4aaf9ed2f1b634f68b7074",
+      "kind": "audio",
+      "segments": [
+        {
+          "partIndex": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "chapterIndex": 2,
+          "ranges": [
+            {
+              "blockIndex": -1,
+              "start": 0,
+              "end": 16,
+              "sha256": "4a45199921db895746827dee19e6ba1aa9c1356815a67dd728e291a67d1ebc12"
+            },
+            {
+              "blockIndex": 0,
+              "start": 0,
+              "end": 46,
+              "sha256": "16ab139eefdc2aeb0c4982621ab4ac3595d1ac991ad0d4cbdcd3342ce4c4260e"
+            }
+          ],
+          "ordinal": 0,
+          "id": "f473b90b-4635-5d57-a017-c56a3bacc25f",
+          "sourceSha256": "c4c6c7a91962b25dc6647f2fee9cffbf3a8ef32ce95e8e242361db1ef370c069"
+        },
+        {
+          "partIndex": 1,
+          "publicationId": "10000000-0000-4000-8000-000000000002",
+          "chapterIndex": 3,
+          "ranges": [
+            {
+              "blockIndex": -1,
+              "start": 0,
+              "end": 16,
+              "sha256": "88373c75ff2aba58bba4f0a2a9edaba828c4dc20bd0af9a37b104f6b694913fa"
+            },
+            {
+              "blockIndex": 0,
+              "start": 0,
+              "end": 46,
+              "sha256": "e6de401187be864b5439828d7caa783463514e3e247145ce0723b6d3fe92c97c"
+            }
+          ],
+          "ordinal": 1,
+          "id": "ad44b1c6-a8b0-5b1b-a0f1-a8f23f0fd5ba",
+          "sourceSha256": "30fda37b7247b24ab747ffe331f41b01c78ff6c60948eec30a10ffe3b7bbb703"
+        },
+        {
+          "partIndex": 2,
+          "publicationId": "10000000-0000-4000-8000-000000000003",
+          "chapterIndex": 0,
+          "ranges": [
+            {
+              "blockIndex": -1,
+              "start": 0,
+              "end": 16,
+              "sha256": "4f378fa0822b83fd407352cd2ca1d934717402971d8936573a46ace57f3b69e1"
+            },
+            {
+              "blockIndex": 0,
+              "start": 0,
+              "end": 46,
+              "sha256": "cb76f9633316bb4b2d5f94b06c517b1935b835805981dd32333c84084585c204"
+            }
+          ],
+          "ordinal": 2,
+          "id": "e49dd411-b3c3-58a5-af63-8b8187c89115",
+          "sourceSha256": "f7f4c39b4396fe1c69f0e5ab73117657c515334a3f44bab9142b3ba94fce6a75"
+        }
+      ]
+    }
+  },
+  "outputs": [
+    "Перевод: Part 1 chapter 2",
+    "Перевод: Original body 1/2. 😀 A safely pinned sentence.",
+    "Перевод: Part 1 chapter 3",
+    "Перевод: Original body 1/3. 😀 A safely pinned sentence.",
+    "Перевод: Part 2 chapter 0",
+    "Перевод: Original body 2/0. 😀 A safely pinned sentence."
+  ],
+  "translated": [
+    {
+      "title": "Synthetic original — главы 6–7 — машинный перевод",
+      "author": "Fixture Author",
+      "language": "ru",
+      "assets": {},
+      "structure": {
+        "schemaVersion": 2,
+        "warnings": [
+          "LEGACY_STRUCTURE_ONLY",
+          "MACHINE_TRANSLATION_DRAFT"
+        ],
+        "chapters": [
+          {
+            "id": "c-2",
+            "revision": 1,
+            "title": "Перевод: Part 1 chapter 2",
+            "blocks": [
+              {
+                "id": "c-2-b-0",
+                "type": "paragraph",
+                "text": "Перевод: Original body 1/2. 😀 A safely pinned sentence."
+              }
+            ]
+          },
+          {
+            "id": "c-3",
+            "revision": 1,
+            "title": "Перевод: Part 1 chapter 3",
+            "blocks": [
+              {
+                "id": "c-3-b-0",
+                "type": "paragraph",
+                "text": "Перевод: Original body 1/3. 😀 A safely pinned sentence."
+              }
+            ]
+          }
+        ]
+      },
+      "chapters": [
+        {
+          "title": "Перевод: Part 1 chapter 2",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Перевод: Original body 1/2. 😀 A safely pinned sentence."
+            }
+          ]
+        },
+        {
+          "title": "Перевод: Part 1 chapter 3",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Перевод: Original body 1/3. 😀 A safely pinned sentence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Synthetic original — главы 8–8 — машинный перевод",
+      "author": "Fixture Author",
+      "language": "ru",
+      "assets": {},
+      "structure": {
+        "schemaVersion": 2,
+        "warnings": [
+          "LEGACY_STRUCTURE_ONLY",
+          "MACHINE_TRANSLATION_DRAFT"
+        ],
+        "chapters": [
+          {
+            "id": "c-0",
+            "revision": 1,
+            "title": "Перевод: Part 2 chapter 0",
+            "blocks": [
+              {
+                "id": "c-0-b-0",
+                "type": "paragraph",
+                "text": "Перевод: Original body 2/0. 😀 A safely pinned sentence."
+              }
+            ]
+          }
+        ]
+      },
+      "chapters": [
+        {
+          "title": "Перевод: Part 2 chapter 0",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Перевод: Original body 2/0. 😀 A safely pinned sentence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-24",
+  "branch": "experimental/audio",
+  "sanitized": true,
+  "cleanDockerViteBuild": true,
+  "composeConfig": true,
+  "nodeAudioTests": {"passed": 129, "failed": 0, "skipped": 1, "skipReason": "Windows sharing lock test skipped in Linux"},
+  "pythonTests": {"passed": 45, "failed": 0},
+  "frozenProfilesConsistent": true,
+  "realSynthesisRepeated": false,
+  "newPhysicalPhoneAcceptance": false,
+  "voiceListeningStatus": "NOT_LISTENED",
+  "initialDiagnostics": ["Docker test source mount initially omitted helper scripts; repeated with full closure", "Four Python tests initially exceeded Windows path limits in deeply nested clone; test-only temporary directory changed and 45/45 repeated successfully"],
+  "dependencyUpdates": {"body-parser": "2.3.0 -> 2.4.0", "multer": "2.4.0 -> 2.5.0"},
+  "distributedWeightsBooksWheelsOrKeys": false,
+  "publicTestOnlyKey": "tests/fixtures/fetch-tls/test-key.pem is a synthetic localhost fixture, never a deployment key"
+}

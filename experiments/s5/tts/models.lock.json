@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Offline Russian TTS pilot; no production-provider acceptance is implied.",
+  "checkedAt": "2026-10-23",
+  "runtime": {
+    "sherpa-onnx": "1.13.8",
+    "license": "Apache-2.0",
+    "linkedComponentLicenses": {"espeak-ng":"GPL-3.0-or-later","piper-phonemize":"MIT","onnxruntime":"MIT"},
+    "licenseScope": "Apache-2.0 describes sherpa's own source, not every linked component. This private pilot does not redistribute a runtime or native app. Preserve complete corresponding source/license notices before any redistribution.",
+    "upgradeWarning": "Official maintainers announced removal of espeak-ng in 2.0 as a breaking change; do not silently upgrade the 1.13.8 phonemizer contract.",
+    "licensingEvidence": ["https://github.com/k2-fsa/sherpa-onnx/issues/3731","https://github.com/k2-fsa/sherpa-onnx/issues/4053"],
+    "primarySource": "https://github.com/k2-fsa/sherpa-onnx/tree/v1.13.8",
+    "linuxPython312Wheels": [
+      {"path":"sherpa_onnx-1.13.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl","bytes":4400575,"sha256":"6949773017647febc0c3696dffb2c67dd3febd4737b87e3dd135a42773704a06","url":"https://files.pythonhosted.org/packages/13/78/2f712b7408ddbb64614c20388912414705b728516224e737b63f2adec94a/sherpa_onnx-1.13.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"},
+      {"path":"sherpa_onnx_core-1.13.8-py3-none-manylinux2014_x86_64.whl","bytes":10642497,"sha256":"4da90acf435373d7b2ba9cc0be806e7e274d28f63f5780880b5dea6721626e36","url":"https://files.pythonhosted.org/packages/b6/ca/e27c1fb5c54b181d4a5450f3d5c789d9da02eb42dc9b20cfdab5dda4c864/sherpa_onnx_core-1.13.8-py3-none-manylinux2014_x86_64.whl"}
+    ]
+  },
+  "models": [
+    {
+      "id":"piper-denis-fp32","engine":"sherpa-onnx","family":"Piper VITS","precision":"fp32",
+      "upstreamRevision":"5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+      "modelCard":"https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/denis/medium/MODEL_CARD",
+      "license":{"repository":"MIT","voiceDataset":"CC0-1.0","notes":"Sherpa redistribution also includes espeak-ng data with its own notices; preserve archive license files. Voice was fine-tuned from lessac medium, per upstream card."},
+      "archive":{"path":"vits-piper-ru_RU-denis-medium.tar.bz2","url":"https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-denis-medium.tar.bz2","bytes":67190991,"sha256":"efa4c18e0b5e32b81d1b6df36b9d312831e5d545200e27848ef926a4cd930300","publisherAssetId":323261602,"hashProvenance":"GitHub official publisher asset digest"},
+      "directory":"vits-piper-ru_RU-denis-medium","modelFilename":"ru_RU-denis-medium.onnx","sampleRate":22050,"dataDirectory":"espeak-ng-data"
+    },
+    {
+      "id":"piper-denis-int8","engine":"sherpa-onnx","family":"Piper VITS","precision":"int8",
+      "upstreamRevision":"5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+      "modelCard":"https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/denis/medium/MODEL_CARD",
+      "license":{"repository":"MIT","voiceDataset":"CC0-1.0","notes":"Official sherpa-onnx int8 conversion of the Denis voice; keep espeak-ng notices."},
+      "archive":{"path":"vits-piper-ru_RU-denis-medium-int8.tar.bz2","url":"https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-denis-medium-int8.tar.bz2","bytes":21058905,"sha256":"d710e29eb7854c42461d16d65d3cef753cc559639ca75806edc75ba71f23af66","publisherAssetId":323261636,"hashProvenance":"GitHub official publisher asset digest"},
+      "directory":"vits-piper-ru_RU-denis-medium-int8","modelFilename":"ru_RU-denis-medium.onnx","sampleRate":22050,"dataDirectory":"espeak-ng-data"
+    },
+    {
+      "id":"piper-ruslan-fp32","engine":"sherpa-onnx","family":"Piper VITS","precision":"fp32",
+      "upstreamRevision":"5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+      "modelCard":"https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/ruslan/medium/MODEL_CARD",
+      "license":{"repository":"MIT","voiceDataset":"CC-BY-NC-SA-4.0","notes":"Dataset license is noncommercial/share-alike; this is a personal noncommercial experiment. No public voice redistribution is being enabled."},
+      "archive":{"path":"vits-piper-ru_RU-ruslan-medium.tar.bz2","url":"https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-ruslan-medium.tar.bz2","bytes":67210684,"sha256":"0690b1cad01f86e8db9ba988af24898bdc1af774e23cb2e46b9c730269b6fd83","publisherAssetId":323261285,"hashProvenance":"GitHub official publisher asset digest"},
+      "directory":"vits-piper-ru_RU-ruslan-medium","modelFilename":"ru_RU-ruslan-medium.onnx","sampleRate":22050,"dataDirectory":"espeak-ng-data"
+    },
+    {
+      "id":"mms-rus-fp32","engine":"transformers-vits","family":"Meta MMS VITS","precision":"fp32",
+      "upstreamRevision":"a6f0f76c028c49175f42074ee79bd3e17ee1dd47",
+      "modelCard":"https://huggingface.co/facebook/mms-tts-rus/blob/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/README.md",
+      "license":{"weights":"CC-BY-NC-4.0","notes":"Direct official Meta safetensors only; no PyTorch pickle or model-supplied Python. Personal noncommercial experiment."},
+      "directory":"mms-tts-rus","sampleRate":16000,
+      "files":[
+        {"path":"model.safetensors","url":"https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/model.safetensors","bytes":145232120,"sha256":"4ed1b47c11a9d3242ec1a094847f8252f7860c96aeb5ce316047985e58fe8759","hashProvenance":"Official Hugging Face LFS SHA256"},
+        {"path":"config.json","url":"https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/config.json","bytes":1641,"sha256":"d76f3cad35e24a6d10f9d65d833555b7ab8020d8fa8d30eb5d70070ef15ae315"},
+        {"path":"vocab.json","url":"https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/vocab.json","bytes":511,"sha256":"05dc299fc7281439c4792e6a6e12fa5f5a7bd4a2cf6b9cc807b602a2ff4e7abb"},
+        {"path":"tokenizer_config.json","url":"https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/tokenizer_config.json","bytes":288,"sha256":"8a4d38ec4879e5632899764dae779b6ead35e8e295cc0ed79c2d9d0af648323a"},
+        {"path":"special_tokens_map.json","url":"https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/special_tokens_map.json","bytes":48,"sha256":"7807cfe333571a07dbcf74a5ad1e9755da2ff17a43f8fae808a76f48508d621b"},
+        {"path":"README.md","url":"https://huggingface.co/facebook/mms-tts-rus/resolve/a6f0f76c028c49175f42074ee79bd3e17ee1dd47/README.md","bytes":3978,"sha256":"30f278fe4ee484b35d1c824b8fa3fb143274a0768d3f71a58f524cebcff8d93b"}
+      ]
+    }
+  ],
+  "excluded":[
+    {"id":"piper-irina","reason":"Upstream voice model card explicitly lists dataset license as Unknown; not selected as a redistribution default."},
+    {"id":"silero-v5-ru","reason":"Official standalone instructions deserialize a torch.package pickle; excluded from this safe-format pilot. This is an integration-policy decision, not a malware finding."},
+    {"id":"mms-sherpa-release-archive","reason":"Older official release asset has no publisher SHA256 digest. Prefer direct Meta safetensors with publisher LFS SHA256 and pinned revision."}
+  ]
+}

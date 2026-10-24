@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "narrationId": "ac25d03e-7424-4249-b2bd-6218b46947a7",
+  "revision": 1,
+  "sourceText": {
+    "publicationId": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+    "publicationRevision": 1,
+    "manifestSha256": "96c0d80827166dbf1cd4d01371759b696daaf77d070b443a735219f1301a1e04"
+  },
+  "recipe": {
+    "providerId": "fixture-only-no-tts",
+    "engineId": "no-engine-installed",
+    "engineVersion": "0-not-run",
+    "modelId": "no-model-installed",
+    "modelSha256": "404ecf6d2d8ae59f8b5207962cd359fe41c1f7005a8d625de7b30a9c37bd85f5",
+    "voiceId": "synthetic-silence-no-voice",
+    "voiceSha256": "2f33613831a03dba1d08cb1572d2b31b0e3cca745d3759fe7298a205fb0d76fa",
+    "configSha256": "0d88b8e34e92affdfb183cf71739ab92a6fab0d4165390e84dae0ba49335c0a0",
+    "language": "ru",
+    "normalizationRevision": 1,
+    "lexiconRevision": 0
+  },
+  "segments": [
+    {
+      "id": "6736d33c-cff7-4d03-aeaf-444ca32c32b7",
+      "revision": 1,
+      "sourceText": {
+        "publicationId": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+        "publicationRevision": 1,
+        "manifestSha256": "96c0d80827166dbf1cd4d01371759b696daaf77d070b443a735219f1301a1e04"
+      },
+      "recipeSha256": "f6584aef83945fdb97b5706792d16ed09ab142e3b855c63cee1ac5bb4c8e36b4",
+      "locator": {
+        "publicationId": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+        "publicationRevision": 1,
+        "chapterId": "first",
+        "blockId": "p1",
+        "offset": 0
+      },
+      "spokenTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contentKind": "synthetic-sample",
+      "resource": {
+        "path": "audio/sample.wav",
+        "sha256": "c726d333dd159a31423f3480dbb1c5c4a9dfcd30efe1f7e12ade390dc92e8908",
+        "bytes": 1644,
+        "mediaType": "audio/wav"
+      },
+      "durationMs": 100
+    }
+  ],
+  "totalDurationMs": 100,
+  "alignmentGranularity": "none"
+}

@@ -1,23 +1,115 @@
-name: gargantua-mvp
+name: gargantua-audio-experimental
+
+x-app: &app
+  build: .
+  image: gargantua-audio-experimental:local
+  user: "1000:1000"
+  read_only: true
+  init: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  tmpfs: ["/tmp:size=64m,mode=1777"]
+  environment: &environment
+    NODE_ENV: production
+    DATABASE_URL: "postgres://cotology_app:${DB_PASSWORD:?Generate DB_PASSWORD}@db:5432/library"
+    APP_ORIGIN: http://localhost:3080
+    LIBRARY_DIR: /library
+    QUARANTINE_DIR: /quarantine
+    JOBS_DIR: /jobs
+    CLAM_HOST: clamav
+    CLAM_PORT: "3310"
+    INFERENCE_SPOOL: /inference-spool
+    INFERENCE_RUNTIME: /inference-runtime
+  depends_on:
+    db: {condition: service_healthy}
+    storage-init: {condition: service_completed_successfully}
+  restart: unless-stopped
+
 services:
-  app:
-    build: .
-    image: gargantua-mvp:local
-    ports: ["127.0.0.1:3080:3080"]
-    environment:
-      HOST: 0.0.0.0
-      PORT: "3080"
-      NODE_ENV: production
+  storage-init:
+    image: alpine:3.22@sha256:d406446bc05b82480756ce8f1287964d28768c23955fa9480d2a74a2eae7a654
+    network_mode: none
     read_only: true
-    tmpfs: ["/tmp:size=32m,mode=1777"]
+    cap_drop: [ALL]
+    cap_add: [CHOWN, FOWNER, DAC_OVERRIDE]
+    security_opt: ["no-new-privileges:true"]
+    command: [sh, -c, "mkdir -p /library/books /library/derived /quarantine/incoming /quarantine/attempts /jobs/pending /jobs/results && chown -R 1000:1000 /library /quarantine /jobs && chmod 700 /library /quarantine /jobs"]
+    volumes: ["library:/library", "quarantine:/quarantine", "jobs:/jobs"]
+    restart: "no"
+  db:
+    image: postgres:17-bookworm@sha256:858bb5e98eed02eb8cafbcdc007f9a65d1b613972028944a8ec2133ccaf80d27
+    environment:
+      POSTGRES_USER: library
+      POSTGRES_DB: library
+      POSTGRES_PASSWORD: "${DB_ADMIN_PASSWORD:?Generate DB_ADMIN_PASSWORD}"
+      COTOLOGY_ADMIN_PASSWORD: "${DB_ADMIN_PASSWORD:?Generate DB_ADMIN_PASSWORD}"
+      COTOLOGY_APP_PASSWORD: "${DB_PASSWORD:?Generate DB_PASSWORD}"
+    volumes:
+      - database:/var/lib/postgresql/data
+      - ./ops/10-roles.sh:/docker-entrypoint-initdb.d/10-roles.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U library -d library"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    mem_limit: 512m
+    cpus: 1
+    restart: unless-stopped
+  clamav:
+    image: clamav/clamav:stable@sha256:e19130cdebaeacc71fa46eab3ed6f69941f2f22aa5e08d55e9197f8edf43ce5e
+    volumes:
+      - signatures:/var/lib/clamav
+      - ./ops/clamd.conf:/etc/clamav/clamd.conf:ro
+    mem_limit: 2g
+    cpus: 2
+    restart: unless-stopped
+  parser:
+    build: ./parser
+    image: gargantua-audio-parser:local
+    user: "1000:1000"
+    read_only: true
+    network_mode: none
     cap_drop: [ALL]
     security_opt: ["no-new-privileges:true"]
+    tmpfs: ["/tmp:size=128m,mode=1777"]
+    volumes: ["quarantine:/quarantine:ro", "jobs:/jobs"]
+    depends_on:
+      storage-init: {condition: service_completed_successfully}
     mem_limit: 512m
-    cpus: 2
+    cpus: 1
     init: true
+    restart: unless-stopped
+  app:
+    <<: *app
+    command: [node, server/app.mjs]
+    ports: ["127.0.0.1:3080:3080"]
+    volumes:
+      - library:/library:ro
+      - quarantine:/quarantine
+      - ./.local/runtime:/resources:ro
     healthcheck:
-      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3080/api/mvp/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3080/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
       interval: 15s
       timeout: 5s
       retries: 3
-    restart: unless-stopped
+    mem_limit: 512m
+    cpus: 2
+  worker:
+    <<: *app
+    command: [node, server/worker.mjs]
+    volumes:
+      - library:/library
+      - quarantine:/quarantine
+      - jobs:/jobs
+      - ./.local/runtime:/resources:ro
+      - ./.local/inference-spool:/inference-spool
+      - ./.local/inference-runtime:/inference-runtime:ro
+    mem_limit: 768m
+    cpus: 2
+
+volumes:
+  database:
+  library:
+  quarantine:
+  jobs:
+  signatures:

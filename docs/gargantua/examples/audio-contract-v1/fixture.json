@@ -1,0 +1,131 @@
+{
+  "fixtureOnly": true,
+  "scope": "CONTRACT_METADATA_AND_100MS_SYNTHETIC_SILENCE_NOT_TTS_OR_AUDIO_QUALITY",
+  "request": {
+    "query": "Contract fixture",
+    "intent": "book",
+    "language": "ru"
+  },
+  "narration": {
+    "id": "ac25d03e-7424-4249-b2bd-6218b46947a7",
+    "expressionId": "35c183ed-3081-4b6a-bd5d-6d6819d9e372",
+    "language": "ru",
+    "variantKey": "a07441ad-0471-4b82-8a38-bfcedaf6996b",
+    "scope": "profile-private"
+  },
+  "revision": {
+    "narrationId": "ac25d03e-7424-4249-b2bd-6218b46947a7",
+    "revision": 1,
+    "sourceText": {
+      "publicationId": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+      "publicationRevision": 1,
+      "manifestSha256": "96c0d80827166dbf1cd4d01371759b696daaf77d070b443a735219f1301a1e04"
+    },
+    "recipe": {
+      "providerId": "fixture-only-no-tts",
+      "engineId": "no-engine-installed",
+      "engineVersion": "0-not-run",
+      "modelId": "no-model-installed",
+      "modelSha256": "404ecf6d2d8ae59f8b5207962cd359fe41c1f7005a8d625de7b30a9c37bd85f5",
+      "voiceId": "synthetic-silence-no-voice",
+      "voiceSha256": "2f33613831a03dba1d08cb1572d2b31b0e3cca745d3759fe7298a205fb0d76fa",
+      "configSha256": "0d88b8e34e92affdfb183cf71739ab92a6fab0d4165390e84dae0ba49335c0a0",
+      "language": "ru",
+      "normalizationRevision": 1,
+      "lexiconRevision": 0
+    },
+    "state": "sample",
+    "complete": false,
+    "quality": "not-evaluated",
+    "segmentCount": 1,
+    "manifest": {
+      "path": "narration-manifest.json",
+      "sha256": "5a1b3c6221ec4093e69daa08a3baa23bddab5569fc4ad93b0b390283f34adfd1",
+      "bytes": 1905,
+      "mediaType": "application/json"
+    }
+  },
+  "bundle": {
+    "requestId": "a82e13af-c263-47b8-b4e4-4cce3d73675c",
+    "requirementsRevision": 1,
+    "targetLanguage": "ru",
+    "requiredOutputs": [
+      "book",
+      "audio"
+    ],
+    "state": "partial",
+    "book": {
+      "state": "ready",
+      "result": {
+        "kind": "publication",
+        "id": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+        "revision": 1,
+        "manifestSha256": "96c0d80827166dbf1cd4d01371759b696daaf77d070b443a735219f1301a1e04"
+      }
+    },
+    "translation": {
+      "state": "not-required",
+      "reasonCode": "ALREADY_TARGET_LANGUAGE"
+    },
+    "audio": {
+      "state": "partial",
+      "reasonCode": "SYNTHETIC_SAMPLE_NOT_ACCEPTED",
+      "result": {
+        "kind": "narration",
+        "id": "ac25d03e-7424-4249-b2bd-6218b46947a7",
+        "revision": 1,
+        "manifestSha256": "5a1b3c6221ec4093e69daa08a3baa23bddab5569fc4ad93b0b390283f34adfd1"
+      }
+    },
+    "delivery": {
+      "state": "waiting",
+      "reasonCode": "DEVICE_OFFLINE"
+    }
+  },
+  "ttsRequest": {
+    "sourceText": {
+      "publicationId": "a5fcabcc-24ec-4cc2-93db-f8e6874626af",
+      "publicationRevision": 1,
+      "manifestSha256": "96c0d80827166dbf1cd4d01371759b696daaf77d070b443a735219f1301a1e04"
+    },
+    "recipe": {
+      "providerId": "fixture-only-no-tts",
+      "engineId": "no-engine-installed",
+      "engineVersion": "0-not-run",
+      "modelId": "no-model-installed",
+      "modelSha256": "404ecf6d2d8ae59f8b5207962cd359fe41c1f7005a8d625de7b30a9c37bd85f5",
+      "voiceId": "synthetic-silence-no-voice",
+      "voiceSha256": "2f33613831a03dba1d08cb1572d2b31b0e3cca745d3759fe7298a205fb0d76fa",
+      "configSha256": "0d88b8e34e92affdfb183cf71739ab92a6fab0d4165390e84dae0ba49335c0a0",
+      "language": "ru",
+      "normalizationRevision": 1,
+      "lexiconRevision": 0
+    },
+    "sampleFirst": true
+  },
+  "sessionContext": {
+    "profile": {
+      "id": "5ae92917-9c83-4179-a54a-4addf9203534",
+      "login": "fixture-reader",
+      "capabilities": [
+        "request.create"
+      ]
+    },
+    "csrfToken": "documentation_csrf_token_0123456789",
+    "expiresAt": "2099-01-01T00:00:00Z"
+  },
+  "plan": {
+    "id": "fb7fc7d8-025c-4d76-90ec-7d8495ff0a8d",
+    "revision": 1,
+    "requestId": "a82e13af-c263-47b8-b4e4-4cce3d73675c",
+    "requirementsRevision": 1,
+    "outputs": [
+      "book",
+      "audio"
+    ],
+    "requestedBy": "5ae92917-9c83-4179-a54a-4addf9203534",
+    "state": "running",
+    "candidates": [],
+    "requiresApproval": false
+  }
+}

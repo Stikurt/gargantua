@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Frozen original source and paragraph order before TTS inference; not independent listening/translation quality evidence.",
+  "sourceSha256": "1885aa7a54fdab8d010e9acc7f25d0c59b8bc0b6c33d9edd21a0d2d39b7fa9b8",
+  "paragraphs": [
+    {
+      "id": "p01",
+      "textSha256": "d15f4929756f66e58c517a1801629ffb458c03c5446a22414fdc84f1f9bc9344",
+      "characters": 669
+    },
+    {
+      "id": "p02",
+      "textSha256": "45fff1644916c98dd287f4e21ce5018c379f38b821173d8b2cf4bd482e9c4a38",
+      "characters": 645
+    },
+    {
+      "id": "p03",
+      "textSha256": "69597fa2f830d182702b6319053d4cd0754f5633678d20b3ac2e2d1940bbc183",
+      "characters": 716
+    },
+    {
+      "id": "p04",
+      "textSha256": "f77e7c3c5cddadb2c4bd45a6a8ae01ed8fc8d7f50bffd3a1444207c5e784f89b",
+      "characters": 718
+    },
+    {
+      "id": "p05",
+      "textSha256": "18998e5317412a3327f29a8018d9d82ab4b8e51de13637a0e41a41eac93ecba6",
+      "characters": 732
+    },
+    {
+      "id": "p06",
+      "textSha256": "5dce9fa86802050a9d3a0c558498780f712d5e54d8826faa06d749c5a0118c1b",
+      "characters": 712
+    },
+    {
+      "id": "p07",
+      "textSha256": "f83abd375bbd9d3152e81594f4de4f60b4856a2e1a230d3c7ee3caa28b39e14f",
+      "characters": 742
+    },
+    {
+      "id": "p08",
+      "textSha256": "16af6974e3771bfc79dad09e83edd281dda6272894efc0c86643926c25b10ba3",
+      "characters": 794
+    },
+    {
+      "id": "p09",
+      "textSha256": "d3ac11dcbb540fc72008eed716be5d8a66a09c6176c23148fad5445e5c4eced6",
+      "characters": 775
+    },
+    {
+      "id": "p10",
+      "textSha256": "9d2db3ecd26e29fe600332f6e069f14f15483c81a578c0845491e3224aee9e01",
+      "characters": 761
+    },
+    {
+      "id": "p11",
+      "textSha256": "a86b14c3f8e9313c320076ef176d7e91ae30443da625cf727174e139916b5447",
+      "characters": 792
+    },
+    {
+      "id": "p12",
+      "textSha256": "107a55004c03c943658a7f01a56dcad7ce44d1394af86a9fa3ce9ffeecaf6f35",
+      "characters": 762
+    },
+    {
+      "id": "p13",
+      "textSha256": "fa4f2dd47c4af0085875c721d129de5fe909c5c931a2fc95f439c39b9aa16811",
+      "characters": 775
+    },
+    {
+      "id": "p14",
+      "textSha256": "9fb625c813a3e4c9a8b14ccd4fd7b4545107e47abed58608936cc1a451f4bb6e",
+      "characters": 750
+    },
+    {
+      "id": "p15",
+      "textSha256": "ab3070fa75f202c257fcb26635354f7c9e8f576e82c926a7726cc5288db46c92",
+      "characters": 707
+    },
+    {
+      "id": "p16",
+      "textSha256": "c08a9c6e5ba7f23093595cfc9c45cfe4b962812ec6ce666e3c1ed8110c843b50",
+      "characters": 787
+    },
+    {
+      "id": "p17",
+      "textSha256": "5fb5f14f358806109ebd116b2a74af3fa96070c09aad525b8aaa4d43b35984b8",
+      "characters": 770
+    },
+    {
+      "id": "p18",
+      "textSha256": "d70777da4a701bfb9f358b20573c3537add01a7f58961490bd5caba6284cdbb4",
+      "characters": 773
+    },
+    {
+      "id": "p19",
+      "textSha256": "a68a338eb39d4400deb6da949396f22c7fc83c8261a3d859a1af5c1dfd15c45a",
+      "characters": 742
+    },
+    {
+      "id": "p20",
+      "textSha256": "0a8a1dd5df44fc80a2c73a0838d828e567a1fc4b4deab852c4837500da46a2cc",
+      "characters": 793
+    }
+  ]
+}

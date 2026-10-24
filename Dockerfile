@@ -15,7 +15,11 @@ RUN npm ci --omit=dev && npm cache clean --force
 COPY --from=build /app/dist ./dist
 COPY server ./server
 COPY src/mvp ./src/mvp
+COPY inference/profiles.json ./inference/profiles.json
+COPY src/catalogs.mjs src/import-book.mjs src/audio.mjs src/audio-engine.mjs src/audio-requests.mjs src/reader-sync.mjs src/reader-session.mjs src/library-state.mjs src/book-download.mjs src/search-query.mjs src/chapter-batches.mjs src/serial-groups.mjs src/serial-reader.mjs src/discovery-client.mjs src/discovery-delivery.mjs ./src/
 COPY tests ./tests
+COPY scripts/audio-client-fixture.mjs ./scripts/
 COPY desktop ./desktop
+COPY LIBRARY_POLICY.md ./LIBRARY_POLICY.md
 USER node
-CMD ["node", "server/mvp-app.mjs"]
+CMD ["node", "server/app.mjs"]

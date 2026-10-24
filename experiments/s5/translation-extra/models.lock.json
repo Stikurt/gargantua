@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-10-22T21:09:22.697083+00:00",
+  "security": {
+    "allowedModelFormats": [
+      "gguf"
+    ],
+    "allowRemoteCode": false,
+    "allowPickle": false,
+    "inferenceNetwork": "none; internal loopback to same sandbox llama-server only",
+    "originalComparisonManifest": "experiments/s5/translation/models.lock.json",
+    "malwareClaim": "Pinned origin/size/hash is identity only; strict format checks and offline OS sandbox are required. No whole-file antivirus clearance claimed."
+  },
+  "models": [
+    {
+      "id": "qwen35-4b-q4",
+      "repository": "lmstudio-community/Qwen3.5-4B-GGUF",
+      "revision": "f9f88ac3e234be915e23811a6d28ea287bdb927e",
+      "license": "apache-2.0",
+      "provider": "llama-http",
+      "provenance": "Explicitly reviewed LM Studio team conversion of Qwen/Qwen3.5-4B using llama.cpp b8185 per converter card. Not published by Qwen; converter does not pin original upstream commit and numerical equivalence is not independently proven.",
+      "metadataUrl": "https://huggingface.co/api/models/lmstudio-community/Qwen3.5-4B-GGUF/revision/f9f88ac3e234be915e23811a6d28ea287bdb927e?blobs=true",
+      "modelCard": "https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF",
+      "upstream": {
+        "repository": "Qwen/Qwen3.5-4B",
+        "revisionObservedAtReview": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "converterPinnedSourceRevision": null,
+        "sourceEquivalenceClaim": "NOT_PROVEN"
+      },
+      "licenseEvidence": {
+        "license": "apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE",
+        "bytes": 11544,
+        "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+        "localEvidence": ".local\\s5-pilot\\extra-model-research\\qwen35-4b-LICENSE",
+        "conversionRepositoryLicenseFile": null,
+        "licenseDeclaredInPinnedConverterCard": true
+      },
+      "scope": "Separate fifth experimental candidate after original Qwen3 profiles failed semantic screening; original four-model corpus, comparison lock and recipes stay frozen.",
+      "inference": {
+        "textOnly": true,
+        "visionProjector": false,
+        "mtpSpeculation": false,
+        "enableThinking": false,
+        "contextLimitForPilot": 4096,
+        "fitStatus": "NOT_MEASURED",
+        "architectureSupport": "qwen35 loader and hybrid graph present in installed llama.cpp source c7fc5094179bf8a9c73c18593db714f8da41a402; actual GPU load still required"
+      },
+      "files": [
+        {
+          "path": "Qwen3.5-4B-Q4_K_M.gguf",
+          "url": "https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF/resolve/f9f88ac3e234be915e23811a6d28ea287bdb927e/Qwen3.5-4B-Q4_K_M.gguf",
+          "bytes": 2707513696,
+          "sha256": "25082a7dd3776cc3c741c6347d3bd04523f05796607b3fbc32fa3a25dfa1418c",
+          "digestSource": "upstream LFS SHA256 metadata; complete download must match before admission"
+        },
+        {
+          "path": "README.md",
+          "url": "https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF/resolve/f9f88ac3e234be915e23811a6d28ea287bdb927e/README.md",
+          "bytes": 2100,
+          "sha256": "e1b3ca9c804ec81f9d0f8e51eab46d4e0e1b18521e7436bcb95736fb3d0414ae",
+          "digestSource": "SHA256 of bounded pinned converter README bytes"
+        }
+      ],
+      "downloadBytes": 2707515796
+    }
+  ]
+}

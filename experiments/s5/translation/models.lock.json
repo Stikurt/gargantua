@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-10-22T20:03:23.915370+00:00",
+  "security": {
+    "allowedModelFormats": [
+      "safetensors",
+      "gguf"
+    ],
+    "allowRemoteCode": false,
+    "allowPickle": false,
+    "inferenceNetwork": "none (loopback HTTP to in-container llama-server only)",
+    "unmergedBotConversions": "Explicitly identified; not claimed accepted by model authors. Pin and hash every file."
+  },
+  "models": [
+    {
+      "id": "opus-en-ru",
+      "repository": "Helsinki-NLP/opus-mt-en-ru",
+      "revision": "3ff4dbd98515ba253f08f183e0de0b7ccf189ee3",
+      "license": "apache-2.0",
+      "provider": "transformers-marian",
+      "provenance": "HF SFconvertbot unmerged PR7; upstream main has pickle; download safetensors only",
+      "metadataUrl": "https://huggingface.co/api/models/Helsinki-NLP/opus-mt-en-ru/revision/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3?blobs=true",
+      "modelCard": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/README.md",
+          "bytes": 1123,
+          "sha256": "020bfd697b7d0da0338611cf445eb44ae45dda27ff49f2bf64e21ee46882b48b",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "config.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/config.json",
+          "bytes": 1381,
+          "sha256": "d3c2614fd099bc228fc257f047e46f1c6f94cfa12dee2b1fa6c0d780e6b7de06",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "generation_config.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/generation_config.json",
+          "bytes": 293,
+          "sha256": "152452cb7a96bff6c20b54f91fae2a655b72a8a9ce978ca3e9384f87253d5281",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "model.safetensors",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/model.safetensors",
+          "bytes": 306967464,
+          "sha256": "07f5d90a45955a73412a118f0635315a28ea5a5d82522f3be008e71d452526c0",
+          "digestSource": "upstream LFS SHA256 metadata"
+        },
+        {
+          "path": "source.spm",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/source.spm",
+          "bytes": 802781,
+          "sha256": "16bebef1389a0b8ab452772c4e35b9e605e5713f8ac7baa71ca701394eaa086d",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "target.spm",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/target.spm",
+          "bytes": 1080169,
+          "sha256": "745998e51ba5b058e38b7ac7765c25c43ed5c1c39cc92b27163b9b2e323c9d7c",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/tokenizer_config.json",
+          "bytes": 42,
+          "sha256": "eca697b0e7109b94a9f2a1de82173fdbd4ddee97d1fd46a15b3162f191e6eed2",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "vocab.json",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-ru/resolve/3ff4dbd98515ba253f08f183e0de0b7ccf189ee3/vocab.json",
+          "bytes": 2601758,
+          "sha256": "33e95da3be3fa3b50169c4c46693ba2f29fbf4cb29d99044bd07d72d181fa1e9",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        }
+      ],
+      "downloadBytes": 311455011
+    },
+    {
+      "id": "m2m100-418m",
+      "repository": "facebook/m2m100_418M",
+      "revision": "ae6407352f7f86e328c0f0678d466fc4246e78b3",
+      "license": "mit",
+      "provider": "transformers-m2m100",
+      "provenance": "HF SFconvertbot unmerged PR27; upstream main has pickle; download safetensors only",
+      "metadataUrl": "https://huggingface.co/api/models/facebook/m2m100_418M/revision/ae6407352f7f86e328c0f0678d466fc4246e78b3?blobs=true",
+      "modelCard": "https://huggingface.co/facebook/m2m100_418M",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/README.md",
+          "bytes": 4603,
+          "sha256": "1fd660f130aedc5ecf1796b47ab47d43d3c4b36541f5387b7adb3df75cb5dfdb",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "config.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/config.json",
+          "bytes": 908,
+          "sha256": "df0ae43e4e4b0d7e3c97b7f447857a70ef6b6a2aa1f145cedbcc730d95f67134",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "generation_config.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/generation_config.json",
+          "bytes": 233,
+          "sha256": "aed76366507333ddbb8bd49960f23c82fe6446b3319a46a54befdb45324ccf61",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "model.safetensors",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/model.safetensors",
+          "bytes": 1935682568,
+          "sha256": "9ffe8e7dcad99be51e90d98320945f668d0b7cc7553ad87d2cb33a923b9b3a3a",
+          "digestSource": "upstream LFS SHA256 metadata"
+        },
+        {
+          "path": "sentencepiece.bpe.model",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/sentencepiece.bpe.model",
+          "bytes": 2423393,
+          "sha256": "d8f7c76ed2a5e0822be39f0a4f95a55eb19c78f4593ce609e2edbc2aea4d380a",
+          "digestSource": "upstream LFS SHA256 metadata"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/special_tokens_map.json",
+          "bytes": 1140,
+          "sha256": "c1a4f86c3874d279ae1b2a05162858db5dd6c61665d84223ed886cbcff08fda6",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/tokenizer_config.json",
+          "bytes": 298,
+          "sha256": "a53e6aa83da0b82565ed90c3849056307a9453843322ac5b8439ec4b9497fe48",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "vocab.json",
+          "url": "https://huggingface.co/facebook/m2m100_418M/resolve/ae6407352f7f86e328c0f0678d466fc4246e78b3/vocab.json",
+          "bytes": 3708092,
+          "sha256": "b6e77e474aeea8f441363aca7614317c06381f3eacfe10fb9856d5081d1074cc",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        }
+      ],
+      "downloadBytes": 1941821235
+    },
+    {
+      "id": "qwen3-1.7b-q8",
+      "repository": "Qwen/Qwen3-1.7B-GGUF",
+      "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+      "license": "apache-2.0",
+      "provider": "llama-http",
+      "provenance": "Official Qwen GGUF repository",
+      "metadataUrl": "https://huggingface.co/api/models/Qwen/Qwen3-1.7B-GGUF/revision/90862c4b9d2787eaed51d12237eafdfe7c5f6077?blobs=true",
+      "modelCard": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF",
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/LICENSE",
+          "bytes": 11544,
+          "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "README.md",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/README.md",
+          "bytes": 6235,
+          "sha256": "60706b0c6aa38e0d1e73a7b21f98e50cad82ee1eaea636fd1f3a49617bccdb0d",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "Qwen3-1.7B-Q8_0.gguf",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf",
+          "bytes": 1834426016,
+          "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+          "digestSource": "upstream LFS SHA256 metadata"
+        }
+      ],
+      "downloadBytes": 1834443795
+    },
+    {
+      "id": "qwen3-4b-q4",
+      "repository": "Qwen/Qwen3-4B-GGUF",
+      "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "license": "apache-2.0",
+      "provider": "llama-http",
+      "provenance": "Official Qwen GGUF repository",
+      "metadataUrl": "https://huggingface.co/api/models/Qwen/Qwen3-4B-GGUF/revision/bc640142c66e1fdd12af0bd68f40445458f3869b?blobs=true",
+      "modelCard": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/LICENSE",
+          "bytes": 11544,
+          "sha256": "5de36594c10839788a8c589443a8ef9d8b8d17c65a1b5807206ae037fc36c6bd",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "README.md",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/README.md",
+          "bytes": 7576,
+          "sha256": "f7b7cbdbeab2a25b55e92cf160c035287374253b13af7ea2d5178847f6f8537e",
+          "digestSource": "SHA256 of bounded official pinned file bytes"
+        },
+        {
+          "path": "Qwen3-4B-Q4_K_M.gguf",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+          "bytes": 2497280256,
+          "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "digestSource": "upstream LFS SHA256 metadata"
+        }
+      ],
+      "downloadBytes": 2497299376
+    }
+  ]
+}

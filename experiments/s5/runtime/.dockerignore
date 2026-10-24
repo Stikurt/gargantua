@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!requirements.lock
+!wheel-lock.json
+!smoke.py
+!wheels/
+!wheels/*.whl

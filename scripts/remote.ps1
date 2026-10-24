@@ -7,7 +7,7 @@ switch ($Action) {
     'enable' {
         $state = & $tailscalePath status --json | ConvertFrom-Json
         if ($LASTEXITCODE -ne 0 -or $state.BackendState -ne 'Running') { throw 'Сначала войдите в Tailscale на этом ПК и одобрите устройство в своей сети.' }
-        Invoke-RestMethod 'http://127.0.0.1:3080/api/mvp/health' | Out-Null
+        Invoke-RestMethod 'http://127.0.0.1:3080/api/health' | Out-Null
         & $tailscalePath serve --bg --https=443 http://127.0.0.1:3080
         if ($LASTEXITCODE -ne 0) { throw 'Tailscale не включил HTTPS. Выполните подсказку Tailscale для HTTPS вашей сети.' }
         & $tailscalePath serve status

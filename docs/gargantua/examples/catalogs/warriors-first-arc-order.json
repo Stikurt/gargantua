@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "title": "Коты-воители — первый цикл",
+  "seriesKey": "warriors-the-prophecies-begin",
+  "orderType": "official-cycle-order",
+  "scope": "first-arc-only",
+  "language": "en",
+  "notes": [
+    "Проверяемый начальный список из шести романов, не полный перечень франшизы.",
+    "Официальный порядок внутри первого цикла. Не общая хронология франшизы.",
+    "Записи этого списка не являются разрешёнными Work ID Open Library и не доказывают доступность текста.",
+    "Графические адаптации, сборники и другие переводы выбираются отдельно."
+  ],
+  "evidence": [
+    {
+      "url": "https://warriorcats.com/books",
+      "checkedAt": "2026-10-22",
+      "role": "official-cycle-membership-and-order"
+    },
+    {
+      "url": "https://warriorcats.com/content/article/the-structure-of-warrior-cats-how-to-read-the-books",
+      "checkedAt": "2026-10-22",
+      "role": "official-starting-arc-recommendation"
+    }
+  ],
+  "items": [
+    {"id": "curated:warriors:tpc:1", "sequence": 1, "title": "Into the Wild", "author": "Erin Hunter", "searchAliases": []},
+    {"id": "curated:warriors:tpc:2", "sequence": 2, "title": "Fire and Ice", "author": "Erin Hunter", "searchAliases": []},
+    {"id": "curated:warriors:tpc:3", "sequence": 3, "title": "Forest of Secrets", "author": "Erin Hunter", "searchAliases": []},
+    {"id": "curated:warriors:tpc:4", "sequence": 4, "title": "Rising Storm", "author": "Erin Hunter", "searchAliases": []},
+    {"id": "curated:warriors:tpc:5", "sequence": 5, "title": "A Dangerous Path", "author": "Erin Hunter", "searchAliases": []},
+    {"id": "curated:warriors:tpc:6", "sequence": 6, "title": "The Darkest Hour", "author": "Erin Hunter", "searchAliases": []}
+  ]
+}

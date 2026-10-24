@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "s5-original-continuous-chapter-en-ru-v1",
+  "createdLocalDate": "2026-10-23",
+  "sourceLanguage": "en",
+  "targetLanguage": "ru",
+  "provenance": "Four successive original English paragraphs authored for this project by the translation-pilot assistant before reading any model-generated translation output. No borrowed book text. Separate Russian references are assistant-authored examples, not independent human evaluation.",
+  "status": "FROZEN_BEFORE_MODEL_OUTPUT_REVIEW",
+  "samples": [
+    {
+      "id": "chapter-01-raised-bridge",
+      "tags": ["continuous-fiction", "causality", "dialogue", "names", "negation", "passenger-count", "ambiguous-signal", "paragraph-context"],
+      "glossary": [
+        {
+          "source": "Tide Ledger",
+          "target": "Приливная книга",
+          "role": "named-harbour-register",
+          "note": "Approved term for this original fixture. It is the title of the harbour register, not a character or an instruction. Normal Russian grammatical inflection is allowed."
+        }
+      ],
+      "segments": [
+        {
+          "id": "chapter-bridge-1",
+          "text": "By the time Nora reached the harbour office, rain had soaked through the shoulders of her coat. The night clerk had left the Tide Ledger open beneath a stone, though the window beside it was shut. A red line crossed the entry for the evening ferry. Nora read it twice: the bridge was to remain raised until the last passenger had left the landing. Seven people had arrived, according to the clerk. She could see only six moving towards the houses, and one of them was her younger brother."
+        },
+        {
+          "id": "chapter-bridge-2",
+          "text": "Evin stopped when she called his name. He was carrying a woman's red scarf, folded so carefully that Nora first mistook it for a parcel. 'She asked me to keep this dry,' he said. 'Then she went back for something.' He pointed towards the ferry, but the fog had already swallowed its lower deck. From the bridge tower came two faint notes of a bell. Evin reached for the signal rope. Nora caught his wrist before he could pull it. Those notes might have been the wind; they were not permission to leave."
+        },
+        {
+          "id": "chapter-bridge-3",
+          "text": "She sent him to the tower with the Tide Ledger and went down the slippery steps alone. Beneath the ferry's awning, an old woman was kneeling beside a wooden box. Nothing moved inside it. Nora nearly told her that whatever she had lost could wait until morning, but then she heard a small breath behind the box. A child was asleep between two bundles of fishing nets. The woman had not returned for her luggage. She had returned because she could no longer hear her grandson over the noise of the rain."
+        },
+        {
+          "id": "chapter-bridge-4",
+          "text": "When they reached the tower, Evin put the scarf around the child's shoulders. Nora counted again and laughed at herself: the sleeping boy had been hidden against his grandmother when the clerk counted the passengers. There had always been eight of them. Evin opened the Tide Ledger, but Nora shook her head. 'Correct the number first. Then you may lower the bridge.' He wrote slowly, leaving the mistaken entry legible beneath a single line. By the time the ferry's lamp disappeared into the fog, the rain had stopped, and nobody was still waiting on the landing."
+        }
+      ]
+    }
+  ]
+}
