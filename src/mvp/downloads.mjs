@@ -1,14 +1,9 @@
 import { bookKey, chapterOrigin, endpoint, originKey, request as chapterRequest } from './api.mjs';
 import * as deviceStorage from './storage.mjs';
+import { downloadBranch as branchFor, downloadId, downloadOutlineId } from './download-identity.mjs';
+import { createNativeDownloadManager } from './native-downloads.mjs';
+export { downloadId, downloadOutlineId } from './download-identity.mjs';
 
-const branchFor = (book, branchId) => book.source === 'merged' ? '' : String(branchId ?? book.defaultBranchId ?? '');
-export const downloadId = (book, branchId) => encodeURIComponent(JSON.stringify([bookKey(book), branchFor(book, branchId)]));
-export function downloadOutlineId(book, chapters, branchId) {
-  const value = JSON.stringify(chapters.map(chapter => [originKey(chapterOrigin(book, chapter, branchFor(book, branchId))), chapter.available !== false]));
-  let hash = 2166136261;
-  for (let index = 0; index < value.length; index++) hash = Math.imul(hash ^ value.charCodeAt(index), 16777619);
-  return `${chapters.length}-${(hash >>> 0).toString(36)}`;
-}
 
 function textPresent(value) {
   return Array.isArray(value?.paragraphs)
@@ -234,4 +229,7 @@ export function createDownloadManager({ storage = deviceStorage, request = chapt
     subscribe(listener) { listeners.add(listener); return () => listeners.delete(listener); } };
 }
 
-export const downloads = createDownloadManager();
+const nativeDownloads = globalThis.window?.gargantua?.downloads;
+export const downloads = nativeDownloads
+  ? createNativeDownloadManager({ bridge: nativeDownloads, storage: deviceStorage })
+  : createDownloadManager();

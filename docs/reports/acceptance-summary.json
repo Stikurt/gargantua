@@ -1,85 +1,280 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "publicationDate": "2026-10-24",
-  "release": "v0.8.0",
+  "publicationKind": "source-only-main-update",
+  "sourceClientVersion": "0.9.0",
+  "binaryReleaseUpdated": false,
+  "previousBinaryRelease": "v0.8.0",
   "components": {
     "server": "0.7.1",
-    "windows": "0.7.1",
-    "android": "0.8.0"
+    "windows": "0.9.0",
+    "android": "0.9.0"
   },
   "sanitized": true,
   "rawEvidencePublished": false,
-  "publicationChecks": {
-    "cleanDockerBuild": true,
-    "nodeTests": {
-      "passed": 84,
+  "bookTextsPublished": false,
+  "currentSourceChecks": {
+    "mvpJavaScript": {
+      "passed": 123,
       "failed": 0
     },
-    "retainedDependencyChange": {
-      "body-parser": "2.3.0 -> 2.4.0"
+    "warriorsAutomationJavaScript": {
+      "passed": 18,
+      "failed": 0
     },
-    "unusedLegacyDependenciesRemoved": true,
-    "rebuiltWindowsClient": {
-      "passed": 80,
+    "publicReportJavaScript": {
+      "passed": 10,
+      "failed": 0
+    },
+    "totalSeparateJavaScriptChecks": 151,
+    "androidJava": {
+      "tests": 45,
       "failed": 0,
-      "screenshots": 16,
-      "rendererErrors": 0,
-      "consoleErrors": 0,
-      "uiOnlyBookAccess": true,
-      "backend": "existing accepted 0.7.1",
-      "offlineMode": "isolated client transport blocked"
+      "errors": 0
     },
-    "cleanAndroidBuild": {
-      "unitTests": 10,
-      "lintErrors": 0,
-      "lintWarnings": 12,
-      "assembleDebug": true,
-      "rebuiltApkInstalledOnPhone": false
+    "androidLint": {
+      "errors": 0,
+      "warnings": 13
     },
-    "releaseApk": {
-      "sha256": "536eeffb03ff533d81a2778007220d9aadca0e709de6aa78150b926f1e32773e",
-      "previouslyPhysicallyTested": true
+    "productionUiBuild": true
+  },
+  "currentClientAcceptance": {
+    "windows": {
+      "version": "0.9.0",
+      "packagedExe": true,
+      "passed": 52,
+      "failed": 0,
+      "isolatedProfile": true,
+      "uiOnlyBookActions": true,
+      "coldProcessPersistence": true,
+      "chapterTransportRequests": 0,
+      "zipImportClaimed": false
+    },
+    "androidLibrary": {
+      "apkSha256": "608f96c505e42000775f908342e38b3c61163b608dd00e3dbc382b798a43fa77",
+      "passed": 66,
+      "failed": 0,
+      "finalApkMatchingActiveUiBridgeAssets": 4,
+      "manualOrderColdRestart": true,
+      "scopedMovePreservesOtherMemberships": true,
+      "duplicatesAfterReadd": false,
+      "cachedSectionsOpenedInReader": 2
+    },
+    "androidFinalTransfer": {
+      "apkSha256": "1d92cb82c8e5612455066e105b93a5a006c8ebed8f34ff5d5f3ba2b0e35a7d1f",
+      "installedOnPhysicalPhone": true,
+      "passed": 184,
+      "failed": 0,
+      "books": 2,
+      "logicalSections": 183,
+      "cachedSections": 183,
+      "verifiedChapterHashes": 183,
+      "savedArchiveBytes": 627929,
+      "actualAndroidSavePicker": true,
+      "actualAndroidImportPicker": true,
+      "actualShareChooser": true,
+      "shareTargetObserved": "WhatsApp",
+      "exactNamedGargantuaZipAttachment": true,
+      "shareZipVerifiedChapterHashes": 183,
+      "shareUriIdentifiesVerifiedZip": true,
+      "wholeZipByteEqualityClaimed": false,
+      "recipientSelections": 0,
+      "deliveryClaimed": false,
+      "repeatImportReusesBooks": true,
+      "corruptHashRejectedWithoutMutation": true,
+      "previousNativeJobsRetained": 58,
+      "nativeDownloadedCountsNondecreasing": true,
+      "cachedSectionsOpenedInReader": 4,
+      "networkScope": "online; zero chapter requests only for the two selected cached books; other downloads continued",
+      "selectedBookChapterTransportRequests": 0,
+      "forceStops": 0,
+      "skipped": [
+        "cold whole-app offline restart",
+        "runtime URI read-grant flag visibility"
+      ]
+    },
+    "androidFinalHome": {
+      "apkSha256": "1d92cb82c8e5612455066e105b93a5a006c8ebed8f34ff5d5f3ba2b0e35a7d1f",
+      "observationStart": "2026-10-24T14:27:58.584Z",
+      "observationEnd": "2026-10-24T14:28:02.331Z",
+      "durableDownloadedBefore": 53,
+      "durableDownloadedAfter": 54,
+      "totalSections": 103,
+      "successfulHttpCompletions": 2,
+      "webViewCallsWhileHome": 0,
+      "serviceRunning": true,
+      "foregroundService": true,
+      "activityResumedOnlyAfterObservation": true,
+      "screenOffTested": false
+    },
+    "responsiveBrowser": {
+      "libraryAssertions": 140,
+      "backRegressionAssertions": 2,
+      "syntheticBooks": 52,
+      "syntheticFolders": 3,
+      "widths": [
+        320,
+        360,
+        393,
+        412,
+        852,
+        900,
+        1440
+      ],
+      "nativeZipTested": false,
+      "physicalPhoneTested": false
     }
   },
-  "historical": {
-    "windows070": {
-      "checksPassed": 349,
-      "screenshots": 46
+  "historicalAndroid09": {
+    "normalDownload": {
+      "apkSha256": "3cbc3da5ebf358acd519d134f111acc6b7c0bf7d2b80f6e568b06dbeb009350c",
+      "passed": 105,
+      "failed": 1,
+      "overallOk": false,
+      "cachedSectionsOpenedOffline": 43,
+      "totalSections": 516,
+      "failureScope": "subsequent incompatible merged-source selection"
     },
-    "supremeMagus071": {
-      "outline": 4531,
-      "cachedAndOpenedOffline": 4525,
-      "restricted": 6,
-      "checksPassed": 4555,
-      "completedAccessible": true,
-      "completeBook": false,
-      "overallOk": false
+    "mergedDownload": {
+      "apkSha256": "844accc3b821dfd9d9f590d5e51f0ee9a9ca9b2764ace53081c136ff20e39c9e",
+      "passed": 1155,
+      "failed": 0,
+      "outlineSections": 4531,
+      "alreadyCachedBeforeRun": 370,
+      "cachedSectionsOpenedOffline": 377,
+      "sourceCounts": {
+        "ranobelib": 375,
+        "ranobeme": 2
+      },
+      "restrictedSections": 6,
+      "wholeBookComplete": false,
+      "screenOffSkipped": true
     },
-    "androidBaseline": {
-      "checksPassed": 242,
-      "apkSha256": "991249c0f7c83b1db2950d4def6fbad39944989097fac7ffeb44368b48995a1f"
+    "strictOfflineTransfer": {
+      "apkSha256": "74a9784999430b34b8ca25bff0dea52580a8e0ea77df5bb00ead69f743d3ba7b",
+      "passed": 67,
+      "failed": 0,
+      "books": 2,
+      "verifiedChapterHashes": 183,
+      "cachedSectionsOpenedInReader": 4,
+      "coldRestart": true,
+      "chapterTransportRequests": 0
     },
-    "androidFinal": {
-      "actualServerDisconnectionChapters": 25,
-      "completedAssertionsInTargetedRun": 116,
-      "targetedRunOverallOk": false,
-      "externalAndRandomChecksPassed": 27,
-      "physicalTouchChecksPassed": 3
+    "freshImportWithoutServer": {
+      "qaApkSha256": "e1748e9a11e5509e8b0dff595f0579088664b1c8b3b511b1ee85fd97810a0617",
+      "passed": 49,
+      "failed": 0,
+      "initialBooks": 0,
+      "initialFolders": 0,
+      "initialJobs": 0,
+      "newBooks": 2,
+      "verifiedChapterHashes": 183,
+      "cachedSectionsOpenedInReader": 4,
+      "sectionsRepeatedAfterColdRestart": 4,
+      "serverRemainedEmpty": true,
+      "chapterTransportRequests": 0,
+      "qaPackageRemoved": true,
+      "mainLibraryCleared": false
+    }
+  },
+  "warriorsDatedSnapshot": {
+    "path": "../gargantua/WARRIORS_DOWNLOAD_STATUS.json",
+    "snapshotAt": "2026-10-24T14:26:12.000Z",
+    "live": false,
+    "selectedEditions": 52,
+    "fullyDownloadedSelectedEditions": 23,
+    "observedDownloadedSections": 1755,
+    "observedTotalSections": 4116,
+    "representedUnits": 49,
+    "plannedReadingUnits": 116,
+    "wholeSeriesComplete": false,
+    "illustrationCompletenessClaimed": false
+  },
+  "historicalPublicationV080": {
+    "release": "v0.8.0",
+    "components": {
+      "server": "0.7.1",
+      "windows": "0.7.1",
+      "android": "0.8.0"
     },
-    "tailscaleFinal": {
-      "checksPassed": 81,
-      "screenshots": 13,
-      "coldLaunches": 6,
-      "usbBookServerRoute": false,
-      "downloadedSections": 3,
-      "offlineMode": "native app transport blocked; VPN still active"
+    "publicationChecks": {
+      "cleanDockerBuild": true,
+      "nodeTests": {
+        "passed": 84,
+        "failed": 0
+      },
+      "retainedDependencyChange": {
+        "body-parser": "2.3.0 -> 2.4.0"
+      },
+      "unusedLegacyDependenciesRemoved": true,
+      "rebuiltWindowsClient": {
+        "passed": 80,
+        "failed": 0,
+        "screenshots": 16,
+        "rendererErrors": 0,
+        "consoleErrors": 0,
+        "uiOnlyBookAccess": true,
+        "backend": "existing accepted 0.7.1",
+        "offlineMode": "isolated client transport blocked"
+      },
+      "cleanAndroidBuild": {
+        "unitTests": 10,
+        "lintErrors": 0,
+        "lintWarnings": 12,
+        "assembleDebug": true,
+        "rebuiltApkInstalledOnPhone": false
+      },
+      "releaseApk": {
+        "sha256": "536eeffb03ff533d81a2778007220d9aadca0e709de6aa78150b926f1e32773e",
+        "previouslyPhysicallyTested": true
+      }
+    },
+    "clientEvidence": {
+      "windows070": {
+        "checksPassed": 349,
+        "screenshots": 46
+      },
+      "supremeMagus071": {
+        "outline": 4531,
+        "cachedAndOpenedOffline": 4525,
+        "restricted": 6,
+        "checksPassed": 4555,
+        "completedAccessible": true,
+        "completeBook": false,
+        "overallOk": false
+      },
+      "androidBaseline": {
+        "checksPassed": 242,
+        "apkSha256": "991249c0f7c83b1db2950d4def6fbad39944989097fac7ffeb44368b48995a1f"
+      },
+      "androidFinal": {
+        "actualServerDisconnectionChapters": 25,
+        "completedAssertionsInTargetedRun": 116,
+        "targetedRunOverallOk": false,
+        "externalAndRandomChecksPassed": 27,
+        "physicalTouchChecksPassed": 3
+      },
+      "tailscaleFinal": {
+        "checksPassed": 81,
+        "screenshots": 13,
+        "coldLaunches": 6,
+        "usbBookServerRoute": false,
+        "downloadedSections": 3,
+        "offlineMode": "native app transport blocked; VPN still active"
+      }
     }
   },
   "limitations": [
-    "Six Supreme Magus sections are restricted by the source; 4531/4531 not claimed.",
-    "Cross-source numbering differs; cached integrity does not prove literary continuity.",
-    "Android APK is a debug build, not a store release.",
-    "Audio quality has not been accepted by listening; see experimental branch.",
-    "External catalogues and their availability can change."
+    "This update publishes source only; old v0.8.0 binaries were not replaced.",
+    "Android final library asset equality does not turn the historical 66-check run into a new run on another APK.",
+    "Final transfer was online; cold offline and fresh import have separate historical APK provenance.",
+    "No recipient was selected and no messenger/cloud delivery was claimed.",
+    "Runtime URI permission flags were unavailable; native source configuration was reviewed separately.",
+    "Complete download of the whole 116-unit Warriors bibliography is not claimed.",
+    "Comic/card/section counters do not prove complete saved illustrations.",
+    "Six historical Supreme Magus sections remain source-restricted; full4531/4531 is not claimed.",
+    "Android system or device power management can stop the service; no boot autostart or unlimited background operation is claimed.",
+    "Audio remains on experimental/audio and was not changed or included.",
+    "Raw profiles, personal server addresses, keys, book texts and local reports are not published."
   ]
 }

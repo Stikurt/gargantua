@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "version": "0.9.0",
+  "serverVersion": "0.7.1",
+  "verifiedAt": "2026-10-24T14:55:57.604Z",
+  "scope": "Public source checkout prepared for GitHub; independent Docker build and Android SDK build. No phone data, private signing key or book files were required.",
+  "javascript": {
+    "mvpTests": 123,
+    "warriorsScriptTests": 18,
+    "publicReportTests": 10,
+    "passed": 151,
+    "failed": 0
+  },
+  "productionBuild": {
+    "dockerBuild": true,
+    "activeInterfaceAndBridgeEquivalentToPhysicallyTestedApk": "1d92cb82c8e5612455066e105b93a5a006c8ebed8f34ff5d5f3ba2b0e35a7d1f",
+    "assets": [
+      {
+        "path": "android/mvp/src/main/assets/assets/index-BIh7HbJK.css",
+        "sha256": "d76367a904d6edf5a0a09376c97bfedcdb037b86c552eb4a3f653dbe40e8fc34",
+        "referenceSha256": "d76367a904d6edf5a0a09376c97bfedcdb037b86c552eb4a3f653dbe40e8fc34",
+        "comparison": "byte-identical"
+      },
+      {
+        "path": "android/mvp/src/main/assets/assets/index-DiC6Z-wL.js",
+        "sha256": "d8b9b5b01899bbf7cdb346403ef106c34e0338f9955caa78ef1bcbb557f8dd1e",
+        "referenceSha256": "d8b9b5b01899bbf7cdb346403ef106c34e0338f9955caa78ef1bcbb557f8dd1e",
+        "comparison": "byte-identical"
+      },
+      {
+        "path": "android/mvp/src/main/assets/index.html",
+        "sha256": "ef7d3155614b99bdb816179a9be706ffede741b06d46665d7ac912e053e42a5b",
+        "referenceSha256": "e5518371c5cd3b871714e5c1f9a6df7676c9226f93a4fd5f7d331d753a1dee04",
+        "comparison": "CRLF-to-LF line-ending normalization only"
+      },
+      {
+        "path": "android/mvp/src/main/assets/native-bridge.js",
+        "sha256": "68f5eecf38d8055628e6295754ec167478abfbe259a0ab067da46d5f640a55d4",
+        "referenceSha256": "68f5eecf38d8055628e6295754ec167478abfbe259a0ab067da46d5f640a55d4",
+        "comparison": "byte-identical"
+      }
+    ]
+  },
+  "android": {
+    "buildSuccessful": true,
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "lintErrors": 0,
+    "lintWarnings": 13,
+    "targetSdk": 35,
+    "personalSigningKeyMounted": false,
+    "verificationBuildInstalledOnPhone": false
+  },
+  "physicalAcceptance": "../gargantua/ANDROID_MVP_0_9_ACCEPTANCE.md",
+  "binaryReleaseCreated": false
+}

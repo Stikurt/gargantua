@@ -21,7 +21,7 @@ public class MvpTransportTest {
         assertEquals(-1, MvpTransport.retryAfter("-3", 0));
         assertEquals(-1, MvpTransport.retryAfter("NaN", 0));
         assertEquals(-1, MvpTransport.retryAfter("nonsense", 0));
-        assertEquals(86400000, MvpTransport.retryAfter("999999999", 0));
+        assertEquals(604800000, MvpTransport.retryAfter("999999999", 0));
         assertEquals(1000, MvpTransport.retryAfter("Thu, 01 Jan 1970 00:00:01 GMT", 0));
     }
     @Test public void offlineAndInvalidRequestsNeverOpenNetwork() throws Exception {

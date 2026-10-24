@@ -12,6 +12,12 @@ import java.time.format.DateTimeFormatter;
 
 final class MvpTransport {
     static final int MAX_BYTES = 24 * 1024 * 1024;
+    static final class RequestControl {
+        private volatile HttpURLConnection connection;
+        volatile boolean cancelled;
+        synchronized void bind(HttpURLConnection value) { connection = value; if (cancelled && value != null) value.disconnect(); }
+        synchronized void cancel() { cancelled = true; if (connection != null) connection.disconnect(); }
+    }
 
     static JSONObject error(String message, int status, String code) {
         JSONObject result = new JSONObject();
@@ -21,9 +27,9 @@ final class MvpTransport {
 
     static long retryAfter(String header, long now) {
         if (header == null || header.trim().isEmpty()) return -1;
-        try { double seconds = Double.parseDouble(header.trim()); return Double.isFinite(seconds) && seconds >= 0 ? Math.min(86400000, (long) Math.ceil(seconds * 1000)) : -1; }
+        try { double seconds = Double.parseDouble(header.trim()); return Double.isFinite(seconds) && seconds >= 0 ? Math.min(604800000, (long) Math.ceil(seconds * 1000)) : -1; }
         catch (NumberFormatException ignored) {
-            try { return Math.min(86400000, Math.max(0, ZonedDateTime.parse(header.trim(), DateTimeFormatter.RFC_1123_DATE_TIME).toInstant().toEpochMilli() - now)); }
+            try { return Math.min(604800000, Math.max(0, ZonedDateTime.parse(header.trim(), DateTimeFormatter.RFC_1123_DATE_TIME).toInstant().toEpochMilli() - now)); }
             catch (RuntimeException invalid) { return -1; }
         }
     }
@@ -41,6 +47,9 @@ final class MvpTransport {
     }
 
     static JSONObject request(String server, String rawPath, boolean offline) {
+        return request(server, rawPath, offline, null);
+    }
+    static JSONObject request(String server, String rawPath, boolean offline, RequestControl control) {
         final String path;
         try { path = ServerAddress.apiPath(rawPath); }
         catch (IllegalArgumentException error) { return error(error.getMessage(), 400, "REQUEST_INVALID"); }
@@ -50,6 +59,7 @@ final class MvpTransport {
         try {
             String origin = ServerAddress.validate(server);
             connection = (HttpURLConnection) new URL(origin + path).openConnection();
+            if (control != null) { control.bind(connection); if (control.cancelled) return error("Загрузка приостановлена.", 0, "REQUEST_CANCELLED"); }
             connection.setRequestMethod("GET");
             connection.setInstanceFollowRedirects(false);
             connection.setConnectTimeout(Math.min(15000, ServerAddress.timeout(path)));
@@ -64,6 +74,7 @@ final class MvpTransport {
             try (InputStream input = stream; ByteArrayOutputStream out = new ByteArrayOutputStream()) {
                 byte[] buffer = new byte[16384]; int count;
                 while ((count = input.read(buffer)) != -1) {
+                    if (control != null && control.cancelled) return error("Загрузка приостановлена.", 0, "REQUEST_CANCELLED");
                     if (System.nanoTime() > deadline) throw new SocketTimeoutException();
                     if (out.size() + count > MAX_BYTES) return error("Ответ источника слишком большой.", 502, "SOURCE_LIMIT");
                     out.write(buffer, 0, count);
@@ -75,6 +86,6 @@ final class MvpTransport {
             }
         } catch (SocketTimeoutException timeout) { return error("Источник не ответил вовремя. Повторите запрос.", 0, "SOURCE_TIMEOUT"); }
         catch (Exception unavailable) { return error("Сервер недоступен. Проверьте адрес и подключение.", 0, "SERVER_OFFLINE"); }
-        finally { if (connection != null) connection.disconnect(); }
+        finally { if (connection != null) connection.disconnect(); if (control != null) control.bind(null); }
     }
 }

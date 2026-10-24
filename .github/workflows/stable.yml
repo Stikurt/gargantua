@@ -16,5 +16,50 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
-      - run: npm test
+      - name: MVP source tests (123 checks)
+        run: npm test
+      - name: Warriors queue and report tests (18 + 10 checks)
+        run: node --test tests/warriors-download-script.test.mjs tests/warriors-download-report.test.mjs
       - run: npm run build
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Build and stage the Android interface
+        run: |
+          npm run build
+          test -f android/mvp/src/main/assets/native-bridge.js
+          cp dist/index.html dist/icon.svg android/mvp/src/main/assets/
+          cp -R dist/assets android/mvp/src/main/assets/assets
+      - name: Prepare Android SDK builder
+        run: docker build -t gargantua-android-builder:ci android
+      - name: Android unit tests (45 checks), lint and debug APK
+        run: |
+          docker run --rm --memory=3g --cpus=2 \
+            --mount "type=bind,source=$GITHUB_WORKSPACE/android,target=/project" \
+            --mount type=volume,source=gargantua-ci-gradle,target=/home/gradle/.gradle \
+            gargantua-android-builder:ci \
+            gradle --no-daemon :mvp:testDebugUnitTest :mvp:lintDebug :mvp:assembleDebug
+      - name: Upload Android test and lint reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-checks
+          path: |
+            android/mvp/build/test-results/testDebugUnitTest/
+            android/mvp/build/reports/tests/testDebugUnitTest/
+            android/mvp/build/reports/lint-results-debug.*
+          if-no-files-found: warn
+      - name: Upload Android preview APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: gargantua-android-preview
+          path: |
+            android/mvp/build/outputs/apk/debug/mvp-debug.apk
+            android/mvp/build/outputs/apk/debug/output-metadata.json
+          if-no-files-found: error

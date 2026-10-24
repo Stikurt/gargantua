@@ -7,7 +7,7 @@ MIT в LICENSE распространяется на оригинальный к
 - React: https://github.com/facebook/react/blob/main/LICENSE
 - Express: https://github.com/expressjs/express/blob/master/LICENSE
 - Vite: https://github.com/vitejs/vite/blob/main/LICENSE
-- AndroidX WebKit и Android Gradle Plugin используют условия соответствующих upstream-пакетов; зависимости указаны в android/mvp/build.gradle.
+- AndroidX Core, AndroidX WebKit и Android Gradle Plugin используют условия соответствующих upstream-пакетов; зависимости указаны в android/mvp/build.gradle.
 
 Точные версии npm-зависимостей закреплены в package-lock.json. Их тексты лицензий доступны в установленных пакетах после npm ci. Наличие пакета в lock не означает включение его функций в интерфейс.
 

@@ -21,20 +21,43 @@
       const timer = setTimeout(() => {
         pending.delete(id);
         reject(Object.assign(new Error('Источник не ответил вовремя. Повторите запрос.'), {status: 0, code: 'SOURCE_TIMEOUT'}));
-      }, method === 'configureServer' ? 24 * 60 * 60 * 1000 : 125000);
+      }, ['configureServer', 'catalogExport', 'catalogImport'].includes(method) ? 24 * 60 * 60 * 1000 : 125000);
       pending.set(id, {resolve, reject, timer});
       try { native.postMessage(JSON.stringify({id, method, ...args})); }
       catch (error) { clearTimeout(timer); pending.delete(id); reject(error); }
     });
   }
+  async function download(method, args = {}) {
+    const value = await invoke(method, args);
+    // A persisted job can carry a human-readable error alongside status='waiting'
+    // or 'partial'. Native RPC failures use the transport's numeric status/code.
+    if (value && typeof value === 'object' && typeof value.error === 'string' && value.error && Number.isFinite(value.status) && typeof value.code === 'string' && value.code) throw Object.assign(new Error(value.error), value);
+    return value;
+  }
   Object.defineProperty(window, 'gargantua', {value: Object.freeze({
-    platform: 'android', version: '0.8.0',
+    platform: 'android', version: '0.9.0',
     request: (path, options) => options?.method && options.method !== 'GET'
       ? Promise.resolve({error: 'В приложении доступны только запросы чтения.', status: 400, code: 'REQUEST_INVALID'})
       : invoke('request', {path}),
     getServer: () => invoke('getServer'),
     configureServer: () => invoke('configureServer'),
     configure: () => invoke('configureServer'),
+    downloads: Object.freeze({
+      list: () => download('downloadsList'),
+      jobs: () => download('downloadsJobs'),
+      getJob: jobId => download('downloadsGetJob', {jobId}),
+      enqueue: job => download('downloadsEnqueue', {job}),
+      pause: jobId => download('downloadsPause', {jobId}),
+      resume: jobId => download('downloadsResume', {jobId}),
+      cancel: jobId => download('downloadsCancel', {jobId}),
+      readChapter: key => download('downloadsReadChapter', {key}),
+      saveChapter: (key, content) => download('downloadsSaveChapter', {key, content}),
+      start: () => download('downloadsStart'),
+    }),
+    catalogs: Object.freeze({
+      export: (manifest, {share = false} = {}) => download('catalogExport', {manifest, share}),
+      import: () => download('catalogImport'),
+    }),
     onBeforeClose: callback => { closeListeners.add(callback); return () => closeListeners.delete(callback); },
   }), configurable: false, writable: false});
   window.__gargantuaLifecycle = name => {

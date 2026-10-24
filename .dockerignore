@@ -10,4 +10,6 @@ android/.gradle
 android/app/build
 android/app/src/main/assets
 android/mvp/build
-android/mvp/src/main/assets
+android/mvp/src/main/assets/assets/
+android/mvp/src/main/assets/index.html
+android/mvp/src/main/assets/icon.svg

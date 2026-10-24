@@ -166,7 +166,7 @@ export async function saveBook(book, chapters, branches = []) {
 
 const legacyChapterKey = (book, chapter, branchId) => `chapter:${bookKey(book)}:${branchId ?? ''}:${chapter.id ?? chapter.number ?? chapter.index}`;
 export const cachedChapterKey = (book, chapter, branchId) => `text:${originKey(chapterOrigin(book, chapter, branchId))}`;
-export async function readChapter(book, chapter, branchId) {
+export async function readLegacyChapter(book, chapter, branchId) {
   const key = cachedChapterKey(book, chapter, branchId);
   const current = await get(key);
   if (current) return current;
@@ -177,7 +177,20 @@ export async function readChapter(book, chapter, branchId) {
   if (legacy) await put(key, legacy);
   return legacy;
 }
-export const saveChapter = (book, chapter, branchId, content) => put(cachedChapterKey(book, chapter, branchId), content);
+export async function readChapter(book, chapter, branchId) {
+  const native = globalThis.window?.gargantua?.downloads;
+  if (native) {
+    const content = await native.readChapter(originKey(chapterOrigin(book, chapter, branchId)));
+    if (content) return content;
+  }
+  return readLegacyChapter(book, chapter, branchId);
+}
+export const saveChapter = (book, chapter, branchId, content) => {
+  const native = globalThis.window?.gargantua?.downloads;
+  return native
+    ? tracked(native.saveChapter(originKey(chapterOrigin(book, chapter, branchId)), content))
+    : put(cachedChapterKey(book, chapter, branchId), content);
+};
 
 export async function getPosition(book) {
   const position = await get('position:' + bookKey(book));

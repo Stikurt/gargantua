@@ -17,5 +17,6 @@ COPY server ./server
 COPY src/mvp ./src/mvp
 COPY tests ./tests
 COPY desktop ./desktop
+COPY android/mvp/src/main/assets/native-bridge.js ./android/mvp/src/main/assets/native-bridge.js
 USER node
 CMD ["node", "server/mvp-app.mjs"]

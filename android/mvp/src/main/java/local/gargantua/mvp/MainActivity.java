@@ -2,6 +2,11 @@ package local.gargantua.mvp;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.Manifest;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.content.Intent;
 import android.content.ActivityNotFoundException;
 import android.content.pm.ActivityInfo;
@@ -29,6 +34,7 @@ import androidx.webkit.JavaScriptReplyProxy;
 import androidx.webkit.WebViewAssetLoader;
 import androidx.webkit.WebViewCompat;
 import androidx.webkit.WebViewFeature;
+import androidx.core.content.ContextCompat;
 import org.json.JSONObject;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -54,14 +60,23 @@ public final class MainActivity extends Activity {
     private final AtomicLong requestIds = new AtomicLong();
     private boolean closing = false;
     private AlertDialog configDialog;
+    private boolean activityResumed;
+    private boolean downloadsReceiverRegistered;
+    private CatalogTransfer catalogTransfer;
+    private final BroadcastReceiver downloadsReceiver = new BroadcastReceiver() {
+        @Override public void onReceive(Context context, Intent intent) {
+            if (web != null && !isDestroyed()) web.evaluateJavascript("window.dispatchEvent(new CustomEvent('gargantua-downloads-changed'))", null);
+        }
+    };
 
     @Override public void onCreate(Bundle saved) {
         super.onCreate(saved);
+        catalogTransfer = new CatalogTransfer(this);
         try {
-            String savedServer = getPreferences(0).getString("server", "");
+            String savedServer = MvpConnection.preferences(this).getString("server", "");
             server = savedServer.isEmpty() ? "" : ServerAddress.validate(savedServer);
-            offline = BuildConfig.DEBUG && getPreferences(0).getBoolean("debug-offline", false);
-            if (BuildConfig.DEBUG) testSession = getPreferences(0).getString("debug-test-session", "");
+            offline = BuildConfig.DEBUG && MvpConnection.preferences(this).getBoolean("debug-offline", false);
+            if (BuildConfig.DEBUG) testSession = MvpConnection.preferences(this).getString("debug-test-session", "");
             applyDebugIntent(getIntent());
         } catch (Exception ignored) { server = ""; offline = false; }
         web = new WebView(this);
@@ -99,11 +114,20 @@ public final class MainActivity extends Activity {
         WebViewCompat.addWebMessageListener(web, "GargantuaAndroid", Collections.singleton(ORIGIN), (view, message, source, isMainFrame, reply) -> {
             if (!isMainFrame || !ORIGIN.equals(source.toString())) return;
             String raw = message.getData();
-            if (raw == null || raw.length() > 16384) return;
+            if (raw == null) return;
+            if (raw.length() > DownloadProtocol.MAX_MESSAGE_BYTES + 65536) {
+                java.util.regex.Matcher requestId = java.util.regex.Pattern.compile("\\\"id\\\"\\s*:\\s*([0-9]{1,18})").matcher(raw.substring(0, Math.min(1024, raw.length())));
+                if (requestId.find()) respond(reply, Long.parseLong(requestId.group(1)), MvpTransport.error("Слишком большой запрос приложения.", 413, "REQUEST_LIMIT"));
+                return;
+            }
             try {
                 JSONObject request = new JSONObject(raw);
                 long id = request.getLong("id");
                 String method = request.getString("method");
+                if (raw.getBytes(StandardCharsets.UTF_8).length > DownloadProtocol.MAX_MESSAGE_BYTES + 65536) { respond(reply, id, MvpTransport.error("Слишком большой запрос приложения.", 413, "REQUEST_LIMIT")); return; }
+                if (method.startsWith("downloads")) { downloadRequest(reply, id, method, request); return; }
+                if (method.equals("catalogExport")) { catalogTransfer.exportCatalog(request.getJSONObject("manifest"), request.optBoolean("share"), value -> respond(reply, id, value)); return; }
+                if (method.equals("catalogImport")) { catalogTransfer.importCatalog(value -> respond(reply, id, value)); return; }
                 switch (method) {
                     case "getServer": respond(reply, id, serverInfo()); break;
                     case "configureServer": configure(reply, id); break;
@@ -181,6 +205,8 @@ public final class MainActivity extends Activity {
             }
         });
         web.loadUrl(ORIGIN + "/");
+        ContextCompat.registerReceiver(this, downloadsReceiver, new IntentFilter(DownloadService.CHANGED), ContextCompat.RECEIVER_NOT_EXPORTED);
+        downloadsReceiverRegistered = true;
     }
 
     @Override protected void onNewIntent(Intent intent) {
@@ -201,17 +227,17 @@ public final class MainActivity extends Activity {
         }
         if (intent.hasExtra("gargantua.server")) {
             server = ServerAddress.validate(intent.getStringExtra("gargantua.server"));
-            getPreferences(0).edit().putString("server", server).commit();
+            MvpConnection.preferences(this).edit().putString("server", server).commit();
         }
         if (intent.hasExtra("gargantua.offline")) {
             offline = intent.getBooleanExtra("gargantua.offline", false);
-            getPreferences(0).edit().putBoolean("debug-offline", offline).commit();
+            MvpConnection.preferences(this).edit().putBoolean("debug-offline", offline).commit();
         }
         if (intent.hasExtra("gargantua.testSession")) {
             String value = intent.getStringExtra("gargantua.testSession");
             if (value != null && value.matches("[A-Za-z0-9_.-]{1,120}")) {
                 testSession = value;
-                getPreferences(0).edit().putString("debug-test-session", testSession).commit();
+                MvpConnection.preferences(this).edit().putString("debug-test-session", testSession).commit();
             }
         }
     }
@@ -253,10 +279,11 @@ public final class MainActivity extends Activity {
             configDialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(view -> {
                 try {
                     String next = ServerAddress.validate(input.getText().toString());
-                    if (!getPreferences(0).edit().putString("server", next).putBoolean("debug-offline", false).commit()) throw new IllegalStateException();
+                    if (!MvpConnection.preferences(this).edit().putString("server", next).putBoolean("debug-offline", false).commit()) throw new IllegalStateException();
                     server = next; offline = false;
                     configDialog.dismiss(); respond(reply, id, serverInfo());
                     web.evaluateJavascript("window.dispatchEvent(new CustomEvent('gargantua-server-changed'))", null);
+                    DownloadService.signal(this);
                 } catch (IllegalArgumentException error) { input.setError(error.getMessage()); }
                 catch (Exception error) { input.setError("Не удалось сохранить настройки. Повторите попытку."); }
             });
@@ -275,12 +302,17 @@ public final class MainActivity extends Activity {
     }
 
     @Override protected void onPause() {
+        activityResumed = false;
         if (web != null) web.evaluateJavascript("window.__gargantuaLifecycle?.('gargantua-background')", null);
         super.onPause();
     }
 
     @Override protected void onResume() {
         super.onResume();
+        activityResumed = true;
+        DownloadService.startIfNeeded(this, () -> activityResumed && !isFinishing() && !isDestroyed(), unavailable -> {
+            if (unavailable != null && !isDestroyed()) Toast.makeText(this, "Откройте загрузки и нажмите продолжение, чтобы возобновить сохранение.", Toast.LENGTH_LONG).show();
+        });
         if (web != null) web.evaluateJavascript("window.__gargantuaLifecycle?.('gargantua-resume')", null);
     }
 
@@ -297,9 +329,64 @@ public final class MainActivity extends Activity {
     }
 
     @Override protected void onDestroy() {
+        if (catalogTransfer != null) catalogTransfer.close();
+        if (downloadsReceiverRegistered) { unregisterReceiver(downloadsReceiver); downloadsReceiverRegistered = false; }
         if (configDialog != null) configDialog.dismiss();
         tasks.shutdownNow();
         if (web != null) { web.stopLoading(); web.destroy(); web = null; }
         super.onDestroy();
+    }
+    @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (catalogTransfer != null && catalogTransfer.activityResult(requestCode, resultCode, data)) return;
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    private void requestDownloadNotifications() {
+        if (android.os.Build.VERSION.SDK_INT >= 33 && checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED && !MvpConnection.preferences(this).getBoolean("notifications-requested", false)) {
+            MvpConnection.preferences(this).edit().putBoolean("notifications-requested", true).apply();
+            requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 301);
+        }
+    }
+    private void downloadRequest(JavaScriptReplyProxy reply, long id, String method, JSONObject request) {
+        tasks.execute(() -> {
+            Object value;
+            boolean start = false, permission = false;
+            try {
+                DownloadStore store = DownloadStore.get(this);
+                switch (method) {
+                    case "downloadsList": value = store.list(); break;
+                    case "downloadsJobs": value = store.jobs(); break;
+                    case "downloadsGetJob": value = store.job(request.getString("jobId")); break;
+                    case "downloadsReadChapter": value = store.readChapter(request.getString("key")); break;
+                    case "downloadsSaveChapter": store.saveChapter(request.getString("key"), request.getJSONObject("content")); value = true; break;
+                    case "downloadsEnqueue":
+                        JSONObject job = request.getJSONObject("job");
+                        value = store.enqueue(job);
+                        start = !job.optBoolean("imported") && !job.optString("status").equals("paused"); permission = start;
+                        break;
+                    case "downloadsPause": value = store.pause(request.getString("jobId")); break;
+                    case "downloadsResume": value = store.resume(request.getString("jobId")); start = true; permission = true; break;
+                    case "downloadsCancel": store.cancel(request.getString("jobId")); value = true; break;
+                    case "downloadsStart": value = store.list(); start = true; break;
+                    default: throw new IllegalArgumentException("Неизвестная операция загрузки.");
+                }
+            } catch (Exception failure) {
+                value = MvpTransport.error(failure instanceof IllegalArgumentException ? failure.getMessage() : "Не удалось надёжно сохранить загрузку: " + failure.getClass().getSimpleName(), failure instanceof IllegalArgumentException ? 400 : 507, failure instanceof IllegalArgumentException ? "DOWNLOAD_INVALID" : "DOWNLOAD_STORAGE");
+            }
+            final Object result = value; final boolean shouldStart = start, needsPermission = permission;
+            runOnUiThread(() -> {
+                Runnable complete = () -> {
+                    if (!method.equals("downloadsList") && !method.equals("downloadsJobs") && !method.equals("downloadsGetJob") && !method.equals("downloadsReadChapter") && !method.equals("downloadsSaveChapter")) DownloadService.signal(this);
+                    respond(reply, id, result == null ? JSONObject.NULL : result);
+                };
+                if (shouldStart && activityResumed && !isFinishing() && !isDestroyed()) {
+                    if (needsPermission) requestDownloadNotifications();
+                    DownloadService.startIfNeeded(this, () -> activityResumed && !isFinishing() && !isDestroyed(), unavailable -> {
+                        if (unavailable != null) respond(reply, id, MvpTransport.error("Android не разрешил начать фоновую загрузку. Откройте приложение и повторите продолжение.", 503, "DOWNLOAD_START"));
+                        else complete.run();
+                    });
+                } else complete.run();
+            });
+        });
     }
 }

@@ -1,0 +1,2568 @@
+{
+  "schemaVersion": 1,
+  "series": "Коты-воители / Warriors",
+  "generatedAt": "2026-10-24T14:26:12.890Z",
+  "snapshotAt": "2026-10-24T14:26:12.000Z",
+  "live": false,
+  "freshness": {
+    "stateUpdatedAt": "2026-10-24T13:26:01.559Z",
+    "progressUpdatedAt": "2026-10-24T14:26:12.000Z",
+    "stateTimestampSource": "snapshot_timestamp",
+    "progressTimestampSource": "snapshot_timestamp",
+    "stateAgeSeconds": 3611,
+    "progressAgeSeconds": 1,
+    "staleAfterSeconds": 300,
+    "progressSnapshotStale": false,
+    "progressPredatesStateSnapshot": false
+  },
+  "summary": {
+    "plannedReadingUnits": 116,
+    "referenceReadingUnits": 116,
+    "directlySelectedUnits": 48,
+    "unitsRepresentedByAllFallbacks": 1,
+    "representedUnits": 49,
+    "partiallyRepresentedFallbackUnits": 1,
+    "unrepresentedUnits": 67,
+    "selectedEditions": 52,
+    "fullyDownloadedSelectedEditions": 23,
+    "selectedEditionsWithoutCompleteProgress": 29,
+    "selectedEditionsWithUnknownProgressCounters": 0,
+    "selectedEditionStatuses": {
+      "complete": 23,
+      "queued": 29
+    },
+    "observedTotalSections": 4116,
+    "observedDownloadedSections": 1755,
+    "observedFailedSections": 0,
+    "observedUnavailableSections": 0,
+    "unitsWithUnresolvedSourceErrors": 7,
+    "unitsWithNoSelectionOnSearchedPages": 54,
+    "unitsWithUnconfirmedRussianQuery": 5,
+    "unitsNotSearchedInSnapshot": 0,
+    "invalidSelectionIdentities": 0,
+    "conflictingBibliographyToEditionMappings": 0,
+    "allSelectedEditionsComplete": false
+  },
+  "wholeSeriesComplete": false,
+  "limitations": [
+    "Это датированный снимок локальной очереди и библиотеки, а не живое состояние загрузок.",
+    "Поиск клиента проверял первую страницу результатов каждого сохранённого запроса. Отсутствие выбора в этом снимке не доказывает, что книги нет в интернете.",
+    "Ошибки источников и неподтверждённые русские переводы указаны отдельно. Английская библиография и русская поисковая подпись не доказывают выход русского издания.",
+    "Сборник представлен отдельными новеллами только при наличии всех требуемых новелл; неполный набор не считается полным сборником.",
+    "Статус complete требует совпавшего издания и оглавления, положительного total, downloaded=total, failed=0 и unavailable=0. Старое состояние queue не заменяет наблюдение в progress.",
+    "Числа разделов описывают сохранённый клиентом материал. Карточка комикса или сохранённые подписи сами по себе не подтверждают полноту изображений.",
+    "Названия и поисковые подписи взяты из публичной библиографии. Личные адреса, настройки, тексты, закладки, позиции чтения и исходные сообщения ошибок не копируются."
+  ],
+  "units": [
+    {
+      "id": "wc-into-the-wild",
+      "order": 1,
+      "title": "Стань диким!",
+      "kind": "main",
+      "queryTitles": [
+        "Стань диким!"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvc2themthLzExODQ2LWVyaW4taGFudGVyLXN0YW4tZGlraW0uaHRtbA",
+        "title": "Стань диким!",
+        "total": 84,
+        "downloaded": 84,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-fire-and-ice",
+      "order": 2,
+      "title": "Огонь и лёд",
+      "kind": "main",
+      "queryTitles": [
+        "Огонь и лёд",
+        "Огонь и лед"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "11591",
+        "title": "Огонь и лёд",
+        "total": 58,
+        "downloaded": 58,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-forest-of-secrets",
+      "order": 3,
+      "title": "Лес секретов",
+      "kind": "main",
+      "queryTitles": [
+        "Лес секретов"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "11588",
+        "title": "Лес секретов",
+        "total": 56,
+        "downloaded": 56,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-rising-storm",
+      "order": 4,
+      "title": "Бушующая стихия",
+      "kind": "main",
+      "queryTitles": [
+        "Бушующая стихия"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "145268",
+        "title": "Бушующая стихия",
+        "total": 57,
+        "downloaded": 57,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-dangerous-path",
+      "order": 5,
+      "title": "Опасная тропа",
+      "kind": "main",
+      "queryTitles": [
+        "Опасная тропа"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "151126",
+        "title": "Опасная тропа",
+        "total": 59,
+        "downloaded": 59,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-darkest-hour",
+      "order": 6,
+      "title": "Битва за лес",
+      "kind": "main",
+      "queryTitles": [
+        "Битва за лес"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "11586",
+        "title": "Битва за лес",
+        "total": 61,
+        "downloaded": 61,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-rise-of-scourge",
+      "order": 7,
+      "title": "Бич. Путь к власти",
+      "kind": "manga",
+      "queryTitles": [
+        "Бич: Путь к власти",
+        "Бич. Путь к власти"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-bluestar-s-prophecy-ru-3",
+      "order": 8,
+      "title": "Пророчество Синей Звезды. Начало",
+      "kind": "super",
+      "queryTitles": [
+        "Пророчество Синей Звезды: Начало",
+        "Пророчество Синей Звезды. Начало"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yNTkxNjYtZXJpbi1oYW50ZXItcHJvcm9jaGVzdHZvLXNpbmVqLXp2ZXpkeS1uYWNoYWxvLmh0bWw",
+        "title": "Пророчество Синей Звезды. Начало",
+        "total": 89,
+        "downloaded": 89,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-bluestar-s-prophecy-ru-4",
+      "order": 9,
+      "title": "Пророчество Синей Звезды. Выбор",
+      "kind": "super",
+      "queryTitles": [
+        "Пророчество Синей Звезды: Выбор",
+        "Пророчество Синей Звезды. Выбор"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yNTUxODgtZXJpbi1oYW50ZXItcHJvcm9jaGVzdHZvLXNpbmVqLXp2ZXpkeS12eWJvci5odG1s",
+        "title": "Пророчество Синей Звезды. Выбор",
+        "total": 86,
+        "downloaded": 86,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-crookedstar-s-promise-ru-7",
+      "order": 10,
+      "title": "Обещание Метеора. Западня",
+      "kind": "super",
+      "queryTitles": [
+        "Обещание Метеора: Западня",
+        "Обещание Метеора. Западня"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvOTczOTItZXJpbi1oYW50ZXItb2Jlc2hoYW5pZS1tZXRlb3JhLXphcGFkbnlhLmh0bWw",
+        "title": "Обещание Метеора. Западня",
+        "total": 94,
+        "downloaded": 94,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-crookedstar-s-promise-ru-8",
+      "order": 11,
+      "title": "Обещание Метеора. Прозрение",
+      "kind": "super",
+      "queryTitles": [
+        "Обещание Метеора: Прозрение",
+        "Обещание Метеора. Прозрение"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvOTYzMDUtZXJpbi1oYW50ZXItb2Jlc2hoYW5pZS1tZXRlb3JhLXByb3pyZW5pZS5odG1s",
+        "title": "Обещание Метеора. Прозрение",
+        "total": 95,
+        "downloaded": 95,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-yellowfang-s-secret-ru-9",
+      "order": 12,
+      "title": "Тайна Щербатой. Предназначение",
+      "kind": "super",
+      "queryTitles": [
+        "Тайна Щербатой: Предназначение",
+        "Тайна Щербатой. Предназначение"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvOTMxNzctZXJpbi1oYW50ZXItdGFqbmEtc2hoZXJiYXRvai1wcmVkbmF6bmFjaGVuaWUuaHRtbA",
+        "title": "Тайна Щербатой. Предназначение",
+        "total": 87,
+        "downloaded": 87,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-yellowfang-s-secret-ru-10",
+      "order": 13,
+      "title": "Тайна Щербатой. Наказание",
+      "kind": "super",
+      "queryTitles": [
+        "Тайна Щербатой: Наказание",
+        "Тайна Щербатой. Наказание"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvOTMxNzUtZXJpbi1oYW50ZXItdGFqbmEtc2hoZXJiYXRvai1uYWthemFuaWUuaHRtbA",
+        "title": "Тайна Щербатой. Наказание",
+        "total": 96,
+        "downloaded": 96,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-exile-from-shadowclan",
+      "order": 14,
+      "title": "Изгнание из племени Теней",
+      "kind": "manga",
+      "queryTitles": [
+        "Изгнание из племени Теней"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-midnight",
+      "order": 15,
+      "title": "Полночь",
+      "kind": "main",
+      "queryTitles": [
+        "Полночь"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yOTkzOTctZXJpbi1oYW50ZXItcG9sbm9jaC5odG1s",
+        "title": "Полночь",
+        "total": 93,
+        "downloaded": 93,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-moonrise",
+      "order": 16,
+      "title": "Восход луны",
+      "kind": "main",
+      "queryTitles": [
+        "Восход луны"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "122292",
+        "title": "Восход луны",
+        "total": 51,
+        "downloaded": 51,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-dawn",
+      "order": 17,
+      "title": "Рассвет",
+      "kind": "main",
+      "queryTitles": [
+        "Рассвет"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "122293",
+        "title": "Рассвет",
+        "total": 65,
+        "downloaded": 65,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-starlight",
+      "order": 18,
+      "title": "Звёздный свет",
+      "kind": "main",
+      "queryTitles": [
+        "Звёздный свет",
+        "Звездный свет"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "109262",
+        "title": "Звёздный свет",
+        "total": 43,
+        "downloaded": 43,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-twilight",
+      "order": 19,
+      "title": "Сумерки",
+      "kind": "main",
+      "queryTitles": [
+        "Сумерки"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "122289",
+        "title": "Сумерки",
+        "total": 54,
+        "downloaded": 54,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-sunset",
+      "order": 20,
+      "title": "Закат",
+      "kind": "main",
+      "queryTitles": [
+        "Закат"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "122288",
+        "title": "Закат",
+        "total": 51,
+        "downloaded": 51,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-lost-warrior",
+      "order": 21,
+      "title": "Пропавший воитель",
+      "kind": "manga",
+      "queryTitles": [
+        "Пропавший воитель"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-warrior-s-refuge",
+      "order": 22,
+      "title": "Прибежище воителя",
+      "kind": "manga",
+      "queryTitles": [
+        "Прибежище воителя"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-warrior-s-return",
+      "order": 23,
+      "title": "Возвращение воителя",
+      "kind": "manga",
+      "queryTitles": [
+        "Возвращение воителя"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-secrets-of-the-clans",
+      "order": 24,
+      "title": "Секреты племён",
+      "kind": "guide",
+      "queryTitles": [
+        "Секреты племён",
+        "Секреты племен"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "271290",
+        "title": "Секреты племён",
+        "total": 32,
+        "downloaded": 32,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-firestar-s-quest-ru-1",
+      "order": 25,
+      "title": "Миссия Огнезвёзда. Искупление",
+      "kind": "super",
+      "queryTitles": [
+        "Миссия Огнезвёзда: Искупление",
+        "Миссия Огнезвёзда. Искупление",
+        "Миссия Огнезвезда: Искупление",
+        "Миссия Огнезвезда"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2ZhbnRhc3Rpa2EtaS1mamVudGV6aS9mZW50ZXppLzE5MzE2NS1lcmluLWhhbnRlci1taXNzaXlhLW9nbmV6dmV6ZGEta25pZ2EtMS1pc2t1cGxlbmllLmh0bWw",
+        "title": "Миссия Огнезвёзда. Искупление",
+        "total": 92,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-firestar-s-quest-ru-2",
+      "order": 26,
+      "title": "Миссия Огнезвёзда. Возрождение",
+      "kind": "super",
+      "queryTitles": [
+        "Миссия Огнезвёзда: Возрождение",
+        "Миссия Огнезвёзда. Возрождение",
+        "Миссия Огнезвезда: Возрождение",
+        "Миссия Огнезвезда"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2ZhbnRhc3Rpa2EtaS1mamVudGV6aS9mZW50ZXppLzE5MzAxNi1lcmluLWhhbnRlci1taXNzaXlhLW9nbmV6dmV6ZGEta25pZ2EtMi12b3pyb3poZGVuaWUuaHRtbA",
+        "title": "Миссия Огнезвёзда. Возрождение",
+        "total": 89,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-into-the-woods",
+      "order": 27,
+      "title": "В поисках дома",
+      "kind": "manga",
+      "queryTitles": [
+        "В поисках дома"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-escape-from-the-forest",
+      "order": 28,
+      "title": "Побег из леса",
+      "kind": "manga",
+      "queryTitles": [
+        "Побег из леса"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-return-to-the-clans",
+      "order": 29,
+      "title": "Главный выбор",
+      "kind": "manga",
+      "queryTitles": [
+        "Главный выбор"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-code-of-the-clans",
+      "order": 30,
+      "title": "Закон племён",
+      "kind": "guide",
+      "queryTitles": [
+        "Закон племён",
+        "Закон племен"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS83NDk1Ni1lcmluLWhhbnRlci16YWtvbi1wbGVtZW4uaHRtbA",
+        "title": "Закон племён",
+        "total": 60,
+        "downloaded": 60,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-shattered-peace",
+      "order": 31,
+      "title": "Потревоженный покой",
+      "kind": "manga",
+      "queryTitles": [
+        "Потревоженный покой"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-clan-in-need",
+      "order": 32,
+      "title": "На подмогу племени",
+      "kind": "manga",
+      "queryTitles": [
+        "На подмогу племени"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-heart-of-a-warrior",
+      "order": 33,
+      "title": "Сердце воителя",
+      "kind": "manga",
+      "queryTitles": [
+        "Сердце воителя"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-skyclan-s-destiny-ru-5",
+      "order": 34,
+      "title": "Судьба Небесного племени. Сомнение",
+      "kind": "super",
+      "queryTitles": [
+        "Судьба Небесного племени: Сомнение",
+        "Судьба Небесного племени. Сомнение"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8xODQwOTAtZXJpbi1oYW50ZXItc3VkYmEtbmViZXNub2dvLXBsZW1lbmktc29tbmVuaWUuaHRtbA",
+        "title": "Судьба Небесного племени. Сомнение",
+        "total": 83,
+        "downloaded": 83,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-skyclan-s-destiny-ru-6",
+      "order": 35,
+      "title": "Судьба Небесного племени. Решение",
+      "kind": "super",
+      "queryTitles": [
+        "Судьба Небесного племени: Решение",
+        "Судьба Небесного племени. Решение"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8xNzE4NjktZXJpbi1oYW50ZXItc3VkYmEtbmViZXNub2dvLXBsZW1lbmktcmVzaGVuaWUuaHRtbA",
+        "title": "Судьба Небесного племени. Решение",
+        "total": 91,
+        "downloaded": 91,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-tallstar-s-revenge-ru-11",
+      "order": 36,
+      "title": "Месть Звёздного Луча. Разлом",
+      "kind": "super",
+      "queryTitles": [
+        "Месть Звёздного Луча: Разлом",
+        "Месть Звёздного Луча. Разлом",
+        "Месть Звездного Луча: Разлом"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNDEwMjE4LWVyaW4taGFudGVyLW1lc3QtenZlemRub2dvLWx1Y2hhLXJhemxvbS5odG1s",
+        "title": "Месть Звёздного Луча. Разлом",
+        "total": 97,
+        "downloaded": 88,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-tallstar-s-revenge-ru-12",
+      "order": 37,
+      "title": "Месть Звёздного Луча. Воссоединение",
+      "kind": "super",
+      "queryTitles": [
+        "Месть Звёздного Луча: Воссоединение",
+        "Месть Звёздного Луча. Воссоединение",
+        "Месть Звездного Луча: Воссоединение"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNDEwMjE3LWVyaW4taGFudGVyLW1lc3QtenZlemRub2dvLWx1Y2hhLXZvc3NvZWRpbmVuaWUuaHRtbA",
+        "title": "Месть Звёздного Луча. Воссоединение",
+        "total": 103,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-shadow-in-riverclan",
+      "order": 38,
+      "title": "Тень в Речном племени",
+      "kind": "manga",
+      "queryTitles": [
+        "Тень в Речном племени"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-winds-of-change",
+      "order": 39,
+      "title": "Ветер перемен",
+      "kind": "manga",
+      "queryTitles": [
+        "Ветер перемен"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-leopardstar-s-honor-ru-25",
+      "order": 40,
+      "title": "Честь Пятнистой Звезды",
+      "kind": "super",
+      "queryTitles": [
+        "Честь Пятнистой Звезды"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-thief-in-thunderclan",
+      "order": 41,
+      "title": "Вор в Грозовом племени",
+      "kind": "manga",
+      "queryTitles": [
+        "Вор в Грозовом племени"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-sight",
+      "order": 42,
+      "title": "Знак Трёх",
+      "kind": "main",
+      "queryTitles": [
+        "Знак Трёх",
+        "Знак Трех"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yODA0MTMtZXJpbi1oYW50ZXItem5hay10cnlvaC5odG1s",
+        "title": "Знак Трёх",
+        "total": 102,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-dark-river",
+      "order": 43,
+      "title": "Тёмная река",
+      "kind": "main",
+      "queryTitles": [
+        "Тёмная река",
+        "Темная река"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8zMDA1MDAtZXJpbi1oYW50ZXItdHlvbW5heWEtcmVrYS5odG1s",
+        "title": "Тёмная река",
+        "total": 91,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-outcast",
+      "order": 44,
+      "title": "Отверженные",
+      "kind": "main",
+      "queryTitles": [
+        "Отверженные"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yOTk5MTItZXJpbi1oYW50ZXItb3R2ZXJ6aGVubnllLmh0bWw",
+        "title": "Отверженные",
+        "total": 93,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-eclipse",
+      "order": 45,
+      "title": "Затмение",
+      "kind": "main",
+      "queryTitles": [
+        "Затмение"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yOTk5MTMtZXJpbi1oYW50ZXItemF0bWVuaWUuaHRtbA",
+        "title": "Затмение",
+        "total": 104,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-long-shadows",
+      "order": 46,
+      "title": "Длинные тени",
+      "kind": "main",
+      "queryTitles": [
+        "Длинные тени"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yOTk4MTMtZXJpbi1oYW50ZXItZGxpbm55ZS10ZW5pLmh0bWw",
+        "title": "Длинные тени",
+        "total": 102,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-sunrise",
+      "order": 47,
+      "title": "Восход солнца",
+      "kind": "main",
+      "queryTitles": [
+        "Восход солнца"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL2RldHNraWUtcHJpa2x5dWNoZW5peWEvMjY4MDY4LWVyaW4taGFudGVyLXZvc2hvZC1zb2xuY2EuaHRtbA",
+        "title": "Восход солнца",
+        "total": 103,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-cats-of-the-clans",
+      "order": 48,
+      "title": "Герои племён",
+      "kind": "guide",
+      "queryTitles": [
+        "Герои племён",
+        "Герои племен"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvOTIwNjgtZXJpbi1oYW50ZXItZ2Vyb2ktcGxlbWVuLmh0bWw",
+        "title": "Герои племён",
+        "total": 24,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-rescue",
+      "order": 49,
+      "title": "Спасение",
+      "kind": "manga",
+      "queryTitles": [
+        "Спасение"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-beyond-the-code",
+      "order": 50,
+      "title": "Следуя Воинскому закону",
+      "kind": "manga",
+      "queryTitles": [
+        "Следуя Воинскому закону"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-after-the-flood",
+      "order": 51,
+      "title": "После наводнения",
+      "kind": "manga",
+      "queryTitles": [
+        "После наводнения"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-fourth-apprentice",
+      "order": 52,
+      "title": "Четвёртый оруженосец",
+      "kind": "main",
+      "queryTitles": [
+        "Четвёртый оруженосец",
+        "Четвертый оруженосец"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3Byb3phL2RldHNraWF5YS1wcm96YS8yMzQzMjQtZXJpbi1oYW50ZXItY2hldHZlcnR5ai1vcnV6aGVub3NlYy5odG1s",
+        "title": "Четвёртый оруженосец",
+        "total": 98,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-fading-echoes",
+      "order": 53,
+      "title": "Долгое эхо",
+      "kind": "main",
+      "queryTitles": [
+        "Долгое эхо"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8yMjU5NTMtZXJpbi1oYW50ZXItZG9sZ29lLWVoby5odG1s",
+        "title": "Долгое эхо",
+        "total": 111,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-night-whispers",
+      "order": 54,
+      "title": "Голоса в ночи",
+      "kind": "main",
+      "queryTitles": [
+        "Голоса в ночи"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvZGV0c2theWEtZmFudGFzdGlrYS8xOTAyNzUtZXJpbi1oYW50ZXItZ29sb3NhLXYtbm9jaGkuaHRtbA",
+        "title": "Голоса в ночи",
+        "total": 110,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-sign-of-the-moon",
+      "order": 55,
+      "title": "Знамение луны",
+      "kind": "main",
+      "queryTitles": [
+        "Знамение луны"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2ZhbnRhc3Rpa2EtaS1mamVudGV6aS9mZW50ZXppLzEwMTk5NS1lcmluLWhhbnRlci16bmFtZW5pZS1sdW55Lmh0bWw",
+        "title": "Знамение луны",
+        "total": 104,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-forgotten-warrior",
+      "order": 56,
+      "title": "Забытый воин",
+      "kind": "main",
+      "queryTitles": [
+        "Забытый воин"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvc2themthLzk5Nzc1LWVyaW4taGFudGVyLXphYnl0eWotdm9pbi5odG1s",
+        "title": "Забытый воин",
+        "total": 100,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-last-hope",
+      "order": 57,
+      "title": "Главная надежда",
+      "kind": "main",
+      "queryTitles": [
+        "Главная надежда"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvc2themthLzk4OTYyLWVyaW4taGFudGVyLWdsYXZuYXlhLW5hZGV6aGRhLmh0bWw",
+        "title": "Главная надежда",
+        "total": 122,
+        "downloaded": 122,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "complete"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-battles-of-the-clans",
+      "order": 58,
+      "title": "Битвы племён",
+      "kind": "guide",
+      "queryTitles": [
+        "Битвы племён",
+        "Битвы племен"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNjM4MDAtZXJpbi1oYW50ZXItYml0dnktcGxlbWVuLmh0bWw",
+        "title": "Битвы племён",
+        "total": 57,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-bramblestar-s-storm-ru-13",
+      "order": 59,
+      "title": "Гроза Ежевичной Звезды. Бедствие",
+      "kind": "super",
+      "queryTitles": [
+        "Гроза Ежевичной Звезды: Бедствие",
+        "Гроза Ежевичной Звезды. Бедствие",
+        "Бедствие"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-bramblestar-s-storm-ru-14",
+      "order": 60,
+      "title": "Гроза Ежевичной Звезды. Вода и Кровь",
+      "kind": "super",
+      "queryTitles": [
+        "Гроза Ежевичной Звезды: Вода и Кровь",
+        "Гроза Ежевичной Звезды. Вода и Кровь",
+        "Вода и кровь"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-untold-stories",
+      "order": 61,
+      "title": "Нерассказанные истории. История Остролистой",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Нерассказанные истории. История Остролистой"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "litlife",
+        "id": "272135",
+        "title": "Нерассказанные истории. История Остролистой",
+        "total": 52,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-tales-from-the-clans",
+      "order": 62,
+      "title": "Нерассказанные истории. Ярость Когтя",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Нерассказанные истории. Ярость Когтя"
+      ],
+      "status": "represented_by_all_fallback_novellas",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": [
+        {
+          "id": "wc-tigerclaw-s-fury",
+          "order": 62,
+          "title": "Ярость Когтя",
+          "kind": "novella",
+          "queryTitles": [
+            "Ярость Когтя"
+          ],
+          "status": "selected_fallback_edition",
+          "sourceIds": [
+            "libcat"
+          ],
+          "selected": {
+            "source": "libcat",
+            "id": "L2tuaWdpL2RldHNrYXlhLWxpdGVyYXR1cmEvc2themthLzEzMzMxOS1lcmluLWhhbnRlci15YXJvc3Qta29ndHlhLmh0bWw",
+            "title": "Ярость Когтя",
+            "total": 27,
+            "downloaded": 0,
+            "failed": 0,
+            "unavailable": 0,
+            "status": "queued"
+          }
+        },
+        {
+          "id": "wc-leafpool-s-wish",
+          "order": 62,
+          "title": "Просьба Листвички",
+          "kind": "novella",
+          "queryTitles": [
+            "Просьба Листвички",
+            "Желание Листвички"
+          ],
+          "status": "selected_fallback_edition",
+          "sourceIds": [],
+          "selected": {
+            "source": "litlife",
+            "id": "228442",
+            "title": "Просьба Листвички",
+            "total": 15,
+            "downloaded": 0,
+            "failed": 0,
+            "unavailable": 0,
+            "status": "queued"
+          }
+        },
+        {
+          "id": "wc-dovewing-s-silence",
+          "order": 62,
+          "title": "Молчание Голубки",
+          "kind": "novella",
+          "queryTitles": [
+            "Молчание Голубки"
+          ],
+          "status": "selected_fallback_edition",
+          "sourceIds": [
+            "libcat"
+          ],
+          "selected": {
+            "source": "libcat",
+            "id": "L2tuaWdpL2ZhbnRhc3Rpa2EtaS1mamVudGV6aS9mZW50ZXppLzk5NzcyLWVyaW4taGFudGVyLW1vbGNoYW5pZS1nb2x1YmtpLmh0bWw",
+            "title": "Молчание Голубки",
+            "total": 29,
+            "downloaded": 0,
+            "failed": 0,
+            "unavailable": 0,
+            "status": "queued"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wc-sun-trail",
+      "order": 63,
+      "title": "Солнечный путь",
+      "kind": "main",
+      "queryTitles": [
+        "Солнечный путь"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvMzk2NjUtZXJpbi1oYW50ZXItc29sbmVjaG55ai1wdXQuaHRtbA",
+        "title": "Солнечный путь",
+        "total": 108,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-thunder-rising",
+      "order": 64,
+      "title": "Юность Грома",
+      "kind": "main",
+      "queryTitles": [
+        "Юность Грома"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvMzQwNDctZXJpbi1oYW50ZXIteXVub3N0LWdyb21hLmh0bWw",
+        "title": "Юность Грома",
+        "total": 100,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-first-battle",
+      "order": 65,
+      "title": "Первая битва",
+      "kind": "main",
+      "queryTitles": [
+        "Первая битва"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvMjg5NjktZXJpbi1oYW50ZXItcGVydmF5YS1iaXR2YS5odG1s",
+        "title": "Первая битва",
+        "total": 107,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-blazing-star",
+      "order": 66,
+      "title": "Сверкающая Звезда",
+      "kind": "main",
+      "queryTitles": [
+        "Сверкающая Звезда"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNDI4ODYzLWVyaW4taGFudGVyLXN2ZXJrYXl1Y2hheWEtenZlemRhLmh0bWw",
+        "title": "Сверкающая Звезда",
+        "total": 100,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-forest-divided",
+      "order": 67,
+      "title": "Время выбора",
+      "kind": "main",
+      "queryTitles": [
+        "Время выбора"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNDIwMDUzLWVyaW4taGFudGVyLXZyZW15YS12eWJvcmEuaHRtbA",
+        "title": "Время выбора",
+        "total": 127,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-path-of-stars",
+      "order": 68,
+      "title": "Звёздная тропа",
+      "kind": "main",
+      "queryTitles": [
+        "Звёздная тропа",
+        "Звездная тропа"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNDEzMDI0LWVyaW4taGFudGVyLXp2ZXpkbmF5YS10cm9wYS5odG1s",
+        "title": "Звёздная тропа",
+        "total": 120,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-ultimate-guide",
+      "order": 69,
+      "title": "Память племён",
+      "kind": "guide",
+      "queryTitles": [
+        "Память племён",
+        "Память племен"
+      ],
+      "status": "selected_edition",
+      "sourceIds": [
+        "libcat"
+      ],
+      "selected": {
+        "source": "libcat",
+        "id": "L2tuaWdpL3ByaWtseXVjaGVuaXlhL3ByaXJvZGEtaS16aGl2b3RueWUvNTU3NzktZXJpbi1oYW50ZXItcGFteWF0LXBsZW1lbi5odG1s",
+        "title": "Память племён",
+        "total": 56,
+        "downloaded": 0,
+        "failed": 0,
+        "unavailable": 0,
+        "status": "queued"
+      },
+      "fallbacks": []
+    },
+    {
+      "id": "wc-moth-flight-s-vision-ru-15",
+      "order": 70,
+      "title": "Сны и видения Бабочки. Беглянка",
+      "kind": "super",
+      "queryTitles": [
+        "Сны и видения Бабочки: Беглянка",
+        "Сны и видения Бабочки. Беглянка",
+        "Беглянка"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-moth-flight-s-vision-ru-16",
+      "order": 71,
+      "title": "Сны и видения Бабочки. Целительница",
+      "kind": "super",
+      "queryTitles": [
+        "Сны и видения Бабочки: Целительница",
+        "Сны и видения Бабочки. Целительница",
+        "Целительница"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-riverstar-s-home-ru-27",
+      "order": 72,
+      "title": "Дом Речной Звезды",
+      "kind": "super",
+      "queryTitles": [
+        "Дом Речной Звезды"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-legends-of-the-clans",
+      "order": 73,
+      "title": "Нерассказанные истории. Сердце Пестролистой",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Нерассказанные истории. Сердце Пестролистой"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": [
+        {
+          "id": "wc-spottedleaf-s-heart",
+          "order": 73,
+          "title": "Сердце Пестролистой",
+          "kind": "novella",
+          "queryTitles": [
+            "Сердце Пестролистой"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-pinestar-s-choice",
+          "order": 73,
+          "title": "Выбор Острозвёзда",
+          "kind": "novella",
+          "queryTitles": [
+            "Выбор Острозвёзда",
+            "Выбор Острозвезда"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-thunderstar-s-echo",
+          "order": 73,
+          "title": "Эхо Громозвёзда",
+          "kind": "novella",
+          "queryTitles": [
+            "Эхо Громозвёзда",
+            "Эхо Громозвезда"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        }
+      ]
+    },
+    {
+      "id": "wc-apprentice-s-quest",
+      "order": 74,
+      "title": "Приключения Ольхолапа",
+      "kind": "main",
+      "queryTitles": [
+        "Приключения Ольхолапа"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-thunder-and-shadow",
+      "order": 75,
+      "title": "Гроза и Тень",
+      "kind": "main",
+      "queryTitles": [
+        "Гроза и Тень"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-shattered-sky",
+      "order": 76,
+      "title": "Расколотое небо",
+      "kind": "main",
+      "queryTitles": [
+        "Расколотое небо"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-darkest-night",
+      "order": 77,
+      "title": "Самая тёмная ночь",
+      "kind": "main",
+      "queryTitles": [
+        "Самая тёмная ночь",
+        "Самая темная ночь"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-river-of-fire",
+      "order": 78,
+      "title": "Огненная река",
+      "kind": "main",
+      "queryTitles": [
+        "Огненная река"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-raging-storm",
+      "order": 79,
+      "title": "Неистовая буря",
+      "kind": "main",
+      "queryTitles": [
+        "Неистовая буря"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-hawkwing-s-journey-ru-17",
+      "order": 80,
+      "title": "Путешествия Орлокрылого. Ослепление",
+      "kind": "super",
+      "queryTitles": [
+        "Путешествия Орлокрылого: Ослепление",
+        "Путешествия Орлокрылого. Ослепление"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-hawkwing-s-journey-ru-18",
+      "order": 81,
+      "title": "Путешествия Орлокрылого. Скитания",
+      "kind": "super",
+      "queryTitles": [
+        "Путешествия Орлокрылого: Скитания",
+        "Путешествия Орлокрылого. Скитания"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-tigerheart-s-shadow-ru-19",
+      "order": 82,
+      "title": "Тень Когтегрива. Видения",
+      "kind": "super",
+      "queryTitles": [
+        "Тень Когтегрива: Видения",
+        "Тень Когтегрива. Видения"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-tigerheart-s-shadow-ru-20",
+      "order": 83,
+      "title": "Тень Когтегрива. Возвращение",
+      "kind": "super",
+      "queryTitles": [
+        "Тень Когтегрива: Возвращение",
+        "Тень Когтегрива. Возвращение"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-crowfeather-s-trial-ru-21",
+      "order": 84,
+      "title": "Испытание Грача. Тени прошлого",
+      "kind": "super",
+      "queryTitles": [
+        "Испытание Грача: Тени прошлого",
+        "Испытание Грача. Тени прошлого"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-crowfeather-s-trial-ru-22",
+      "order": 85,
+      "title": "Испытание Грача. Прощение",
+      "kind": "super",
+      "queryTitles": [
+        "Испытание Грача: Прощение",
+        "Испытание Грача. Прощение"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-squirrelflight-s-hope-ru-23",
+      "order": 86,
+      "title": "Надежда Белки",
+      "kind": "super",
+      "queryTitles": [
+        "Надежда Белки"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-onestar-s-confession-ru-26",
+      "order": 87,
+      "title": "Исповедь Однозвёзда",
+      "kind": "super",
+      "queryTitles": [
+        "Исповедь Однозвёзда",
+        "Исповедь Однозвезда"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-shadows-of-the-clans",
+      "order": 88,
+      "title": "Нерассказанные истории. Месть Кленовницы",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Нерассказанные истории. Месть Кленовницы"
+      ],
+      "status": "partially_represented_by_fallback_novellas",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": [
+        {
+          "id": "wc-mapleshade-s-vengeance",
+          "order": 88,
+          "title": "Месть Кленовницы",
+          "kind": "novella",
+          "queryTitles": [
+            "Месть Кленовницы"
+          ],
+          "status": "selected_fallback_edition",
+          "sourceIds": [],
+          "selected": {
+            "source": "libcat",
+            "id": "L2tuaWdpL2ZhbnRhc3Rpa2EtaS1mamVudGV6aS9mZW50ZXppLzEwNTAwOS1lcmluLWhhbnRlci1tZXN0LWtsZW5vdm5pY3kuaHRtbA",
+            "title": "Месть Кленовницы",
+            "total": 28,
+            "downloaded": 0,
+            "failed": 0,
+            "unavailable": 0,
+            "status": "queued"
+          }
+        },
+        {
+          "id": "wc-goosefeather-s-curse",
+          "order": 88,
+          "title": "Проклятие Гусохвоста",
+          "kind": "novella",
+          "queryTitles": [
+            "Проклятие Гусохвоста"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-ravenpaw-s-farewell",
+          "order": 88,
+          "title": "Прощание Горелого",
+          "kind": "novella",
+          "queryTitles": [
+            "Прощание Горелого"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        }
+      ]
+    },
+    {
+      "id": "wc-path-of-a-warrior",
+      "order": 89,
+      "title": "Нерассказанные истории. Долг Ярохвоста",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Нерассказанные истории. Долг Ярохвоста"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": [
+        {
+          "id": "wc-redtail-s-debt",
+          "order": 89,
+          "title": "Долг Ярохвоста",
+          "kind": "novella",
+          "queryTitles": [
+            "Долг Ярохвоста"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-tawnypelt-s-clan",
+          "order": 89,
+          "title": "Племя Рыжинки",
+          "kind": "novella",
+          "queryTitles": [
+            "Племя Рыжинки"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-shadowstar-s-life",
+          "order": 89,
+          "title": "Жизнь Сумрачной Звезды",
+          "kind": "novella",
+          "queryTitles": [
+            "Жизнь Сумрачной Звезды"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        }
+      ]
+    },
+    {
+      "id": "wc-warrior-s-spirit",
+      "order": 90,
+      "title": "Нерассказанные истории. Секрет Мотылинки",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Нерассказанные истории. Секрет Мотылинки"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": [
+        {
+          "id": "wc-pebbleshine-s-kits",
+          "order": 90,
+          "title": "Котята Галечницы",
+          "kind": "novella",
+          "queryTitles": [
+            "Котята Галечницы"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-tree-s-roots",
+          "order": 90,
+          "title": "Корни Древесника",
+          "kind": "novella",
+          "queryTitles": [
+            "Корни Древесника"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-mothwing-s-secret",
+          "order": 90,
+          "title": "Секрет Мотылинки",
+          "kind": "novella",
+          "queryTitles": [
+            "Секрет Мотылинки"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        }
+      ]
+    },
+    {
+      "id": "wc-lost-stars",
+      "order": 91,
+      "title": "Потерянные звёзды",
+      "kind": "main",
+      "queryTitles": [
+        "Потерянные звёзды",
+        "Потерянные звезды"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-silent-thaw",
+      "order": 92,
+      "title": "Тихая оттепель",
+      "kind": "main",
+      "queryTitles": [
+        "Тихая оттепель"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-veil-of-shadows",
+      "order": 93,
+      "title": "Завеса теней",
+      "kind": "main",
+      "queryTitles": [
+        "Завеса теней"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-darkness-within",
+      "order": 94,
+      "title": "Тьма внутри",
+      "kind": "main",
+      "queryTitles": [
+        "Тьма внутри"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-place-of-no-stars",
+      "order": 95,
+      "title": "Место без звёзд",
+      "kind": "main",
+      "queryTitles": [
+        "Место без звёзд",
+        "Место без звезд"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-light-in-the-mist",
+      "order": 96,
+      "title": "Свет во мгле",
+      "kind": "main",
+      "queryTitles": [
+        "Свет во мгле"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-graystripe-s-vow-ru-24",
+      "order": 97,
+      "title": "Обет Крутобока",
+      "kind": "super",
+      "queryTitles": [
+        "Обет Крутобока"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-warrior-s-choice",
+      "order": 98,
+      "title": "Выбор воителя",
+      "kind": "novella-collection",
+      "queryTitles": [
+        "Выбор воителя"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": [
+        {
+          "id": "wc-daisy-s-kin",
+          "order": 98,
+          "title": "Daisy’s Kin",
+          "kind": "novella",
+          "queryTitles": [
+            "Семья Ромашки"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-spotfur-s-rebellion",
+          "order": 98,
+          "title": "Spotfur’s Rebellion",
+          "kind": "novella",
+          "queryTitles": [
+            "Мятеж Подпалины"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        },
+        {
+          "id": "wc-blackfoot-s-reckoning",
+          "order": 98,
+          "title": "Blackfoot’s Reckoning",
+          "kind": "novella",
+          "queryTitles": [
+            "Расплата Чернопята"
+          ],
+          "status": "no_selection_observed_on_searched_pages",
+          "sourceIds": [
+            "libcat",
+            "litlife"
+          ],
+          "selected": null
+        }
+      ]
+    },
+    {
+      "id": "wc-river",
+      "order": 99,
+      "title": "Река",
+      "kind": "main",
+      "queryTitles": [
+        "Река"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-sky",
+      "order": 100,
+      "title": "Небо",
+      "kind": "main",
+      "queryTitles": [
+        "Небо"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-shadow",
+      "order": 101,
+      "title": "Тень",
+      "kind": "main",
+      "queryTitles": [
+        "Тень"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-thunder",
+      "order": 102,
+      "title": "Гроза",
+      "kind": "main",
+      "queryTitles": [
+        "Гроза"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-wind",
+      "order": 103,
+      "title": "Ветер",
+      "kind": "main",
+      "queryTitles": [
+        "Ветер"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-star",
+      "order": 104,
+      "title": "Звезда",
+      "kind": "main",
+      "queryTitles": [
+        "Звезда"
+      ],
+      "status": "source_error_in_search_snapshot",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-ivypool-s-heart-ru-28",
+      "order": 105,
+      "title": "Сердце Искры",
+      "kind": "super",
+      "queryTitles": [
+        "Сердце Искры"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-ultimate-guide-updated-and-expanded-edition",
+      "order": 106,
+      "title": "The Ultimate Guide: Updated and Expanded Edition",
+      "kind": "guide",
+      "queryTitles": [],
+      "status": "russian_query_unconfirmed",
+      "sourceIds": [],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-elders-quest",
+      "order": 107,
+      "title": "Квест старейшин",
+      "kind": "main",
+      "queryTitles": [
+        "Квест старейшин"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-hidden-moon",
+      "order": 108,
+      "title": "Скрытая луна",
+      "kind": "main",
+      "queryTitles": [
+        "Скрытая луна"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-chasing-shadows",
+      "order": 109,
+      "title": "По следу теней",
+      "kind": "main",
+      "queryTitles": [
+        "По следу теней"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-guiding-light",
+      "order": 110,
+      "title": "Путеводный свет",
+      "kind": "main",
+      "queryTitles": [
+        "Путеводный свет"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-stormclan-s-folly-ru-29",
+      "order": 111,
+      "title": "Безрассудство племени Шторма",
+      "kind": "super",
+      "queryTitles": [
+        "Безрассудство племени Шторма"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-darktail-s-judgment-ru-30",
+      "order": 112,
+      "title": "Правосудие Темнохвоста",
+      "kind": "super",
+      "queryTitles": [
+        "Правосудие Темнохвоста"
+      ],
+      "status": "no_selection_observed_on_searched_pages",
+      "sourceIds": [
+        "libcat",
+        "litlife"
+      ],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-prophecies-begin-volume-1",
+      "order": 113,
+      "title": "The Prophecies Begin, Volume 1",
+      "kind": "graphic-adaptation",
+      "queryTitles": [],
+      "status": "russian_query_unconfirmed",
+      "sourceIds": [],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-prophecies-begin-volume-2",
+      "order": 114,
+      "title": "The Prophecies Begin, Volume 2",
+      "kind": "graphic-adaptation",
+      "queryTitles": [],
+      "status": "russian_query_unconfirmed",
+      "sourceIds": [],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-prophecies-begin-volume-3",
+      "order": 115,
+      "title": "The Prophecies Begin, Volume 3",
+      "kind": "graphic-adaptation",
+      "queryTitles": [],
+      "status": "russian_query_unconfirmed",
+      "sourceIds": [],
+      "selected": null,
+      "fallbacks": []
+    },
+    {
+      "id": "wc-new-prophecy-volume-1",
+      "order": 116,
+      "title": "The New Prophecy, Volume 1",
+      "kind": "graphic-adaptation",
+      "queryTitles": [],
+      "status": "russian_query_unconfirmed",
+      "sourceIds": [],
+      "selected": null,
+      "fallbacks": []
+    }
+  ]
+}
