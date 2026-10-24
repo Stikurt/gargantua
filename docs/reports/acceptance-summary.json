@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "publicationDate": "2026-10-24",
+  "release": "v0.8.0",
+  "components": {
+    "server": "0.7.1",
+    "windows": "0.7.1",
+    "android": "0.8.0"
+  },
+  "sanitized": true,
+  "rawEvidencePublished": false,
+  "publicationChecks": {
+    "cleanDockerBuild": true,
+    "nodeTests": {
+      "passed": 84,
+      "failed": 0
+    },
+    "retainedDependencyChange": {
+      "body-parser": "2.3.0 -> 2.4.0"
+    },
+    "unusedLegacyDependenciesRemoved": true,
+    "rebuiltWindowsClient": {
+      "passed": 80,
+      "failed": 0,
+      "screenshots": 16,
+      "rendererErrors": 0,
+      "consoleErrors": 0,
+      "uiOnlyBookAccess": true,
+      "backend": "existing accepted 0.7.1",
+      "offlineMode": "isolated client transport blocked"
+    },
+    "cleanAndroidBuild": {
+      "unitTests": 10,
+      "lintErrors": 0,
+      "lintWarnings": 12,
+      "assembleDebug": true,
+      "rebuiltApkInstalledOnPhone": false
+    },
+    "releaseApk": {
+      "sha256": "536eeffb03ff533d81a2778007220d9aadca0e709de6aa78150b926f1e32773e",
+      "previouslyPhysicallyTested": true
+    }
+  },
+  "historical": {
+    "windows070": {
+      "checksPassed": 349,
+      "screenshots": 46
+    },
+    "supremeMagus071": {
+      "outline": 4531,
+      "cachedAndOpenedOffline": 4525,
+      "restricted": 6,
+      "checksPassed": 4555,
+      "completedAccessible": true,
+      "completeBook": false,
+      "overallOk": false
+    },
+    "androidBaseline": {
+      "checksPassed": 242,
+      "apkSha256": "991249c0f7c83b1db2950d4def6fbad39944989097fac7ffeb44368b48995a1f"
+    },
+    "androidFinal": {
+      "actualServerDisconnectionChapters": 25,
+      "completedAssertionsInTargetedRun": 116,
+      "targetedRunOverallOk": false,
+      "externalAndRandomChecksPassed": 27,
+      "physicalTouchChecksPassed": 3
+    },
+    "tailscaleFinal": {
+      "checksPassed": 81,
+      "screenshots": 13,
+      "coldLaunches": 6,
+      "usbBookServerRoute": false,
+      "downloadedSections": 3,
+      "offlineMode": "native app transport blocked; VPN still active"
+    }
+  },
+  "limitations": [
+    "Six Supreme Magus sections are restricted by the source; 4531/4531 not claimed.",
+    "Cross-source numbering differs; cached integrity does not prove literary continuity.",
+    "Android APK is a debug build, not a store release.",
+    "Audio quality has not been accepted by listening; see experimental branch.",
+    "External catalogues and their availability can change."
+  ]
+}

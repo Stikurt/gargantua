@@ -1,0 +1,21 @@
+{
+  "name": "gargantua-library",
+  "version": "0.7.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "start": "node server/mvp-app.mjs",
+    "test": "node --test tests/mvp-*.test.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.10"
+  },
+  "license": "MIT"
+}

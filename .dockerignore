@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.env
+.local
+backups
+test-results
+releases
+android/.gradle
+android/app/build
+android/app/src/main/assets
+android/mvp/build
+android/mvp/src/main/assets
